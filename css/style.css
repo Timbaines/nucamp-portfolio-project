@@ -13,10 +13,10 @@ Navbar | Jumbotron
 .jumbotron {
   position: relative;
   border-radius: 20px;
-  background-image: url(../img/bg/nucamp_bg.JPG);
+  background-image: url(../img/nucamp_bg.JPG);
   background-size: cover;
   background-position: top;
-  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.15);
   overflow: hidden;
 }
 
@@ -26,7 +26,7 @@ Navbar | Jumbotron
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.45);
   z-index: 1;
 }
 
@@ -39,6 +39,8 @@ Navbar | Jumbotron
   font-size: 3.5rem;
   font-weight: 700;
 }
+
+/* Supporter Images */
 
 .supporters {
   display: flex;
@@ -60,4 +62,5 @@ Navbar | Jumbotron
 
 .supporter-text span {
   font-weight: 700;
+  margin-left: 15px;
 }
