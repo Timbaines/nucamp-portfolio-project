@@ -7,3 +7,57 @@ Navbar | Jumbotron
   background-color: #e9f5ff;
   box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
 }
+
+/* Jumbotron */
+
+.jumbotron {
+  position: relative;
+  border-radius: 20px;
+  background-image: url(../img/bg/nucamp_bg.JPG);
+  background-size: cover;
+  background-position: top;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.jumbotron .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.jumbotron-inner {
+  position: relative;
+  z-index: 2;
+}
+
+.jumbotron h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.supporters {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.supporters-imgs {
+  display: flex;
+}
+
+.supporter-imgs img {
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 50%;
+  border: 3px solid #e9f5ff;
+  margin-right: -1.5rem;
+}
+
+.supporter-text span {
+  font-weight: 700;
+}
