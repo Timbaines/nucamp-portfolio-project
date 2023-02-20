@@ -29,7 +29,65 @@
   </head>
 
   <body>
-    <header></header>
+    <header>
+      <!-- Navbar | Start-->
+      <div class="container mt-3">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="#">Compassion In Action</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mr-3">
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  >About <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Projects</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false">
+                  Ways To Give
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Project Support</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Staff Support</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Trip Support</a>
+                </div>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <button
+                class="btn btn-dark my-2 my-sm-0"
+                type="button"
+                data-toggle="modal"
+                data-target="#loginModal">
+                Login
+              </button>
+            </form>
+          </div>
+        </nav>
+      </div>
+    </header>
     <footer></footer>
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
@@ -39,3 +97,58 @@
     <script src="js/script.js"></script>
   </body>
 </html>
+
+<!-- Modal for Login Nav -->
+<div id="loginModal" class="modal fade" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title text-dark">Login</h3>
+        <button type="button" class="close" data-dismiss="modal">
+          &times;
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <form>
+            <div class="form-row">
+              <div class="form-group col-12">
+                <label class="sr-only" for="loginEmail">Email address</label>
+                <input
+                  type="email"
+                  class="form-control form-control-sm"
+                  id="loginEmail"
+                  placeholder="Enter email" />
+              </div>
+              <div class="form-group col-12">
+                <label class="sr-only" for="loginPassword">Password</label>
+                <input
+                  type="password"
+                  class="form-control form-control-sm"
+                  id="loginPassword"
+                  placeholder="Password" />
+              </div>
+              <div class="col">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" />
+                  <label class="form-check-label"> Remember me</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <button
+                type="button"
+                class="btn btn-secondary btn-sm ml-auto"
+                data-dismiss="modal">
+                Cancel
+              </button>
+              <button type="submit" class="btn btn-primary btn-sm ml-1">
+                Sign in
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
