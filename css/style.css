@@ -57,10 +57,9 @@ Navbar | Jumbotron
   width: 3.5rem;
   border-radius: 50%;
   border: 3px solid #e9f5ff;
-  margin-right: -1.5rem;
+  margin-right: -1.6rem;
 }
 
 .supporter-text span {
   font-weight: 700;
-  margin-left: 15px;
 }
