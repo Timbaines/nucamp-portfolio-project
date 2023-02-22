@@ -89,11 +89,11 @@ Our Mission
   font-weight: 500;
 }
 
-.our-mission .badge {
+.badge {
   line-height: 14px;
 }
 
-.our-mission .badge-info {
+.badge-info {
   background: #0e5fa2;
 }
 
@@ -121,4 +121,20 @@ Our Mission
 
 .our-mission .mission-wrapper .lower-box {
   margin-top: 100px;
+}
+
+/********************************************
+Our Projects
+********************************************/
+
+.card {
+  border-radius: 20px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.8);
+  box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.8);
+}
+
+.avatar img {
+  height: 50px;
+  width: 50px;
 }
