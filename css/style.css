@@ -3,6 +3,11 @@ Navbar | Jumbotron
 ********************************************/
 
 /* Navbar */
+
+.navbar {
+  background-color: #e9f5ff;
+  padding: 20px;
+}
 .dropdown-menu {
   background-color: #e9f5ff;
   box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
@@ -18,6 +23,8 @@ Navbar | Jumbotron
   background-position: top;
   box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.15);
   overflow: hidden;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .jumbotron .overlay {
@@ -38,6 +45,11 @@ Navbar | Jumbotron
 .jumbotron h1 {
   font-size: 3.5rem;
   font-weight: 700;
+  margin-left: -16px;
+}
+
+.jumbotron p {
+  margin-left: -16px;
 }
 
 /* Supporter Images */
@@ -53,13 +65,60 @@ Navbar | Jumbotron
 }
 
 .supporter-imgs img {
-  height: 3.5rem;
-  width: 3.5rem;
+  height: 3.3rem;
+  width: 3.3rem;
   border-radius: 50%;
   border: 3px solid #e9f5ff;
-  margin-right: -1.6rem;
+  margin-right: -1.5rem;
 }
 
 .supporter-text span {
   font-weight: 700;
+}
+
+/********************************************
+Our Mission
+********************************************/
+
+.our-mission h6 {
+  line-height: 22px;
+  font-size: 18px;
+}
+
+.our-mission .font-weight-medium {
+  font-weight: 500;
+}
+
+.our-mission .badge {
+  line-height: 14px;
+}
+
+.our-mission .badge-info {
+  background: #0e5fa2;
+}
+
+.our-mission .subtitle {
+  color: #8d97ad;
+  line-height: 24px;
+}
+
+.our-mission .img-shadow {
+  -webkit-box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.8);
+  box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.8);
+}
+
+.our-mission .mission-wrapper .img-hover {
+  -webkit-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+.our-mission .mission-wrapper .img-hover:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.our-mission .mission-wrapper .lower-box {
+  margin-top: 100px;
 }

@@ -1,0 +1,12 @@
+@media (max-width: 767px) {
+  .jumbotron {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .our-mission .mission-wrapper .lower-box {
+    margin-top: 0px;
+  }
+}
