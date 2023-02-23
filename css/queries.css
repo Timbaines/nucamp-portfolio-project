@@ -1,12 +1,32 @@
 @media (max-width: 767px) {
   .jumbotron {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 60px;
+    margin-bottom: 0px;
   }
-}
 
-@media (max-width: 767px) {
+  .jumbotron h1 {
+    font-size: 3rem;
+  }
+
   .our-mission .mission-wrapper .lower-box {
     margin-top: 0px;
+  }
+
+  .testimonial .testimonial-pill {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+    -webkit-flex-direction: row !important;
+    -ms-flex-direction: row !important;
+    flex-direction: row !important;
+    border-right: 0px solid rgba(120, 130, 140, 0.13);
+    border-bottom: 1px solid rgba(120, 130, 140, 0.13);
+    margin-bottom: 40px;
+  }
+  .testimonial .testimonial-pill .nav-link img {
+    width: 50px;
+  }
+  .testimonial .testimonial-pill .nav-link.active {
+    border-right: 0px solid #0e5fa2;
+    border-bottom: 3px solid #0e5fa2;
   }
 }

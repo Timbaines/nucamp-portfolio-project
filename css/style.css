@@ -85,18 +85,6 @@ Our Mission
   font-size: 18px;
 }
 
-.our-mission .font-weight-medium {
-  font-weight: 500;
-}
-
-.badge {
-  line-height: 14px;
-}
-
-.badge-info {
-  background: #0e5fa2;
-}
-
 .our-mission .subtitle {
   color: #8d97ad;
   line-height: 24px;
@@ -137,4 +125,84 @@ Our Projects
 .avatar img {
   height: 50px;
   width: 50px;
+}
+
+/********************************************
+Testimonial
+********************************************/
+.testimonial {
+  font-family: "Poppins", sans-serif;
+  color: #8d97ad;
+  font-weight: 300;
+}
+
+.testimonial h1,
+.testimonial h2,
+.testimonial h3,
+.testimonial h4,
+.testimonial h5 {
+  color: #3e4555;
+}
+
+.testimonial .font-weight-light .h6 {
+  font-weight: 500;
+}
+
+.testimonial h5 {
+  line-height: 22px;
+  font-size: 18px;
+}
+
+.testimonial .subtitle .h6 {
+  color: #8d97ad;
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.testimonial .testimonial-pill {
+  border-right: 1px solid rgba(120, 130, 140, 0.13);
+}
+
+.testimonial .testimonial-pill .nav-link {
+  border-radius: 0px;
+  margin: 8px -2px 8px 0;
+}
+
+.testimonial .testimonial-pill .nav-link img {
+  width: 70px;
+  opacity: 0.5;
+}
+
+.testimonial .testimonial-pill .nav-link.active {
+  background: transparent;
+  color: #8d97ad;
+  border-right: 3px solid #0e5fa2;
+}
+
+.testimonial .testimonial-pill .nav-link.active img {
+  opacity: 1;
+}
+
+.testimonial .btn-testimonial {
+  background: #0e5fa2 !important;
+  border: 1px solid #0e5fa2 !important;
+}
+
+.testimonial .btn-md {
+  padding: 18px 0px;
+  width: 60px;
+  height: 60px;
+  font-size: 20px;
+}
+
+/********************************************
+Footer
+********************************************/
+
+.site-footer {
+  padding: 20px 0;
+}
+
+.btn-social-icon {
+  color: #0e5fa2;
 }
