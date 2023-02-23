@@ -6,11 +6,13 @@ Navbar | Jumbotron
 
 .navbar {
   background-color: #e9f5ff;
+  /*
+  box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.4);
   padding: 20px;
+  */
 }
 .dropdown-menu {
   background-color: #e9f5ff;
-  box-shadow: -webkit-box-shadow 0px 0px 30px rgba(115, 128, 157, 0.4);
   box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.4);
 }
 
@@ -19,9 +21,14 @@ Navbar | Jumbotron
 .jumbotron {
   position: relative;
   border-radius: 20px;
-  background-image: url(../img/our-projects/our-projects-1.jpg);
+  background-image: linear-gradient(
+      45deg,
+      rgba(41, 46, 73, 0.2),
+      rgba(83, 105, 118, 0.2)
+    ),
+    url(../img/banners/compassion-in-action-banner.jpg);
   background-size: cover;
-  background-position: top;
+  background-position: center;
   box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.15);
   overflow: hidden;
   margin-top: 80px;
@@ -37,7 +44,7 @@ Navbar | Jumbotron
   background-image: linear-gradient(
     45deg,
     rgba(0, 0, 0, 0.6),
-    rgba(46, 87, 111, 0.8)
+    rgba(46, 87, 111, 0.4)
   );
   z-index: 1;
 }
@@ -185,9 +192,14 @@ Our Projects
   z-index: 2;
 }
 
-.avatar img {
-  height: 50px;
-  width: 50px;
+.card a {
+  text-decoration: none !important;
+}
+
+.card a:hover {
+  border-left: 2px solid #e9f5ff;
+  margin-right: -3px;
+  padding: 5px;
 }
 
 /********************************************
@@ -261,7 +273,7 @@ Testimonial
 .testimonial i {
   margin-top: -11px;
   margin-left: 2px;
-  color: #e9f5ff;
+  color: #ffffff;
 }
 
 /********************************************
@@ -274,7 +286,6 @@ Our Totals
   border: none;
   position: relative;
   margin-bottom: 30px;
-  box-shadow: -webkit-box-shadow 0px 0px 30px rgba(115, 128, 157, 0.8);
   box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.8);
 }
 
