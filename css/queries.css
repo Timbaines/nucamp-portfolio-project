@@ -12,6 +12,10 @@
     margin-top: 0px;
   }
 
+  .card:hover {
+    transform: translateY(0rem);
+  }
+
   .testimonial .testimonial-pill {
     -webkit-box-orient: horizontal !important;
     -webkit-box-direction: normal !important;
