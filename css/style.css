@@ -24,8 +24,8 @@ Navbar | Jumbotron
   background-position: top;
   box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.15);
   overflow: hidden;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .jumbotron .overlay {
@@ -46,11 +46,6 @@ Navbar | Jumbotron
 .jumbotron h1 {
   font-size: 3.5rem;
   font-weight: 700;
-  margin-left: -16px;
-}
-
-.jumbotron p {
-  margin-left: -16px;
 }
 
 /* Supporter Images */
@@ -223,6 +218,7 @@ Our Totals
   text-align: center;
   line-height: 50px;
   margin-left: 15px;
+  margin-bottom: 30px;
   color: #000;
   position: absolute;
   right: -5px;
