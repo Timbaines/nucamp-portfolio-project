@@ -29,6 +29,7 @@
   .testimonial .testimonial-pill .nav-link img {
     width: 50px;
   }
+
   .testimonial .testimonial-pill .nav-link.active {
     border-right: 0px solid #0e5fa2;
     border-bottom: 3px solid #0e5fa2;
