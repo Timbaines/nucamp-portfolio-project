@@ -19,7 +19,7 @@ Navbar | Jumbotron
 .jumbotron {
   position: relative;
   border-radius: 20px;
-  background-image: url(../img/nucamp_bg.JPG);
+  background-image: url(../img/our-projects/our-projects-1.jpg);
   background-size: cover;
   background-position: top;
   box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.15);
@@ -34,7 +34,11 @@ Navbar | Jumbotron
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.45);
+  background-image: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.6),
+    rgba(46, 87, 111, 0.8)
+  );
   z-index: 1;
 }
 
@@ -118,6 +122,65 @@ Our Projects
   box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.8);
 }
 
+.card,
+.card-body,
+.card-title,
+.card-text {
+  position: relative;
+  z-index: 2;
+}
+
+.card .card-img-overlay-a {
+  position: absolute;
+  background-image: linear-gradient(
+      45deg,
+      rgba(41, 46, 73, 0.9),
+      rgba(83, 105, 118, 0.7)
+    ),
+    url(../img/our-projects/our-projects-1.jpg);
+  background-size: cover;
+  background-position: top;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.card .card-img-overlay-b {
+  position: absolute;
+  background-image: linear-gradient(
+      45deg,
+      rgba(41, 46, 73, 0.9),
+      rgba(83, 105, 118, 0.7)
+    ),
+    url(../img/our-projects/our-projects-1.jpg);
+  background-size: cover;
+  background-position: top;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.card .card-img-overlay-c {
+  position: absolute;
+  background-image: linear-gradient(
+      45deg,
+      rgba(41, 46, 73, 0.9),
+      rgba(83, 105, 118, 0.7)
+    ),
+    url(../img/our-projects/our-projects-1.jpg);
+  background-size: cover;
+  background-position: top;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+
 .avatar img {
   height: 50px;
   width: 50px;
@@ -189,6 +252,12 @@ Testimonial
   width: 60px;
   height: 60px;
   font-size: 20px;
+}
+
+.testimonial i {
+  margin-top: -11px;
+  margin-left: 2px;
+  color: #e9f5ff;
 }
 
 /********************************************
