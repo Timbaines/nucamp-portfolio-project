@@ -28,57 +28,10 @@
   </head>
 
   <body>
-    <!-- Donor Give | Modal-->
-    <div class="modal fade" id="giveModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header btn-info-gradient">
-            <h3 class="modal-title text-light" id="exampleModalLongTitle">GIVE TODAY</h3>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-4">.col-md-4</div>
-                <div class="col-md-4 ml-auto">.col-md-4 .ml-auto</div>
-              </div>
-              <div class="row">
-                <div class="col-md-3 ml-auto">.col-md-3 .ml-auto</div>
-                <div class="col-md-2 ml-auto">.col-md-2 .ml-auto</div>
-              </div>
-              <div class="row">
-                <div class="col-md-6 ml-auto">.col-md-6 .ml-auto</div>
-              </div>
-              <div class="row">
-                <div class="col-sm-9">
-                  Level 1: .col-sm-9
-                  <div class="row">
-                    <div class="col-8 col-sm-6">
-                      Level 2: .col-8 .col-sm-6
-                    </div>
-                    <div class="col-4 col-sm-6">
-                      Level 2: .col-4 .col-sm-6
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-            <button type="button" class="btn btn-primary">Donate</button>
-          </div>
-        </div>
-      </div>
-    </div>
-      
 
-    <header class="sticky-top">
       <!-- Navbar | Start-->
-
-      <nav class="navbar navbar-expand-lg navbar-light">
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-light mt-2">
         <a class="navbar-brand" href="#">Compassion In Action</a>
         <button
           class="navbar-toggler"
@@ -126,7 +79,7 @@
               class="btn btn-info-gradient text-light my-2 my-sm-0"
               type="button"
               data-toggle="modal"
-              data-target="#loginModal">
+              data-target="#modalLoginForm">
               Login
             </button>
           </form>
@@ -138,8 +91,8 @@
     <div class="container">
       <div class="jumbotron">
         <div class="overlay"></div>
-        <div class="jumbotron-inner">
-          <h1 class="col col-md-7 mt-4 text-light">Compassion In Action</h1>
+        <div class="jumbotron-inner mt-4 mb-4">
+          <h1 class="col col-md-7 mt-3 text-light">Compassion In Action</h1>
           <p class="lead col col-md-8 text-light mt-4">
             Leading paragraph goes in this section of the component.
           </p>
@@ -157,7 +110,7 @@
             data-target="#giveModal"
             >Give today
           </a>
-          <div class="supporters text-light mt-5 mb-4">
+          <div class="supporters text-light mt-4 mb-5">
             <div class="supporter-imgs">
               <img src="img/supporters/supporter-6.jpg" alt="supporter photo" />
               <img src="img/supporters/supporter-5.jpg" alt="supporter photo" />
@@ -165,7 +118,7 @@
               <img src="img/supporters/supporter-3.jpg" alt="supporter photo" />
               <img src="img/supporters/supporter-2.jpg" alt="supporter photo" />
             </div>
-            <p class="supporter-text ml-2 mt-3">
+            <p class="supporter-text ml-2 mt-4">
               <span class="">250,000+</span> Supporters!
             </p>
           </div>
@@ -173,62 +126,87 @@
       </div>
     </div>
 
-    <!-- Modal for Login Nav -->
-<div id="loginModal" class="modal fade" role="dialog">
+<!-------------------- Modals | Start -------------------->
+
+<!-- Modal | Login -->
+<div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-header btn-info-gradient">
-        <h3 class="modal-title text-light">Login</h3>
-        <button type="button" class="close" data-dismiss="modal">
-          &times;
+      <div class="modal-header text-left ml-3">
+        <h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
-        <div class="container-fluid">
-          <form>
-            <div class="form-row">
-              <div class="form-group col-12">
-                <label class="sr-only" for="loginEmail">Email address</label>
-                <input
-                  type="email"
-                  class="form-control form-control-sm"
-                  id="loginEmail"
-                  placeholder="Enter email" />
-              </div>
-              <div class="form-group col-12">
-                <label class="sr-only" for="loginPassword">Password</label>
-                <input
-                  type="password"
-                  class="form-control form-control-sm"
-                  id="loginPassword"
-                  placeholder="Password" />
-              </div>
-              <div class="col">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" />
-                  <label class="form-check-label"> Remember me</label>
-                </div>
-              </div>
-            </div>
-            <div class="form-row">
-              <button
-                type="button"
-                class="btn btn-secondary btn-sm ml-auto"
-                data-dismiss="modal">
-                Cancel
-              </button>
-              <button
-                type="submit"
-                class="btn btn-info-gradient btn-sm ml-1 text-light">
-                Sign in
-              </button>
-            </div>
-          </form>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <i class="fa fa-envelope prefix text-dark"></i>
+          <input type="email" id="defaultForm-email" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
         </div>
+
+        <div class="md-form mb-4">
+          <i class="fa fa-lock prefix text-dark"></i>
+          <input type="password" id="defaultForm-pass" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="defaultForm-pass">Your password</label>
+        </div>
+
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button class="btn btn-lg btn-info-gradient text-light">Login</button>
       </div>
     </div>
   </div>
 </div>
+
+<!-- Modal | Donor Box -->
+<div class="modal fade" id="giveModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header btn-info-gradient">
+        <h3 class="modal-title text-light" id="exampleModalLongTitle">GIVE TODAY</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-4">.col-md-4</div>
+            <div class="col-md-4 ml-auto">.col-md-4 .ml-auto</div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 ml-auto">.col-md-3 .ml-auto</div>
+            <div class="col-md-2 ml-auto">.col-md-2 .ml-auto</div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 ml-auto">.col-md-6 .ml-auto</div>
+          </div>
+          <div class="row">
+            <div class="col-sm-9">
+              Level 1: .col-sm-9
+              <div class="row">
+                <div class="col-8 col-sm-6">
+                  Level 2: .col-8 .col-sm-6
+                </div>
+                <div class="col-4 col-sm-6">
+                  Level 2: .col-4 .col-sm-6
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">Donate</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-------------------- Modals | End -------------------->
 
 
     <!-- Section | Our Mission -->
@@ -244,8 +222,7 @@
               Community Transformation through Infrastructure Projects
             </h2>
             <h6 class="font-weight-light subtitle">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni
-              dolorum consequuntur recusandae.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnidolorum consequuntur recusandaesit amet consectetur.
             </h6>
             <div class="row">
               <div class="col-md-6 mt-3">
@@ -558,17 +535,19 @@
             </div>
           </div>
           <div class="col-lg-9 col-md-8 ml-auto align-self-center">
+            <div class="row">
+              <div class="row mb-3">
+                <div class="col-lg-6">
+                  <span
+                    class="badge badge-span rounded-pill mb-2 ml-2 px-3 py-2 text-light font-weight-medium"
+                    >OUR TESTIMONIALS
+                  </span>
+                </div>
+              </div>
+            </div>
             <div class="tab-content" id="v-pills-tabContent">
               <div class="tab-pane fade show active" id="t6-1" role="tabpanel">
-                <div class="row mb-3">
-                  <div class="col-lg-6">
-                    <span
-                      class="badge badge-span rounded-pill px-3 py-2 text-light font-weight-medium"
-                      >OUR TESTIMONIALS
-                    </span>
-                  </div>
-                </div>
-                <h3 class="font-weight-">
+                <h3 class="text-dark">
                   What our Supporters say about us
                 </h3>
                 <h6 class="subtitle mt-4 font-weight-light">
@@ -579,7 +558,7 @@
                 </h6>
                 <div class="d-flex mt-5">
                   <div>
-                    <h5 class="mb-0 text-uppercase font-weight-normal">
+                    <h5 class="mb-0 text-uppercase text-dark">
                       Hanna Glover
                     </h5>
                     <h6 class="subtitle font-weight-normal">Texas</h6>
@@ -590,15 +569,7 @@
                 </div>
               </div>
               <div class="tab-pane fade" id="t6-2" role="tabpanel">
-                <div class="row mb-3">
-                  <div class="col-lg-6">
-                    <span
-                      class="badge badge-span rounded-pill px-3 py-1 text-light font-weight-medium"
-                      >OUR TESTIMONIALS
-                    </span>
-                  </div>
-                </div>
-                <h3 class="font-weight-medium">
+                <h3 class="text-dark">
                   What our Supporters say about us
                 </h3>
                 <h6 class="subtitle mt-4 font-weight-light">
@@ -609,7 +580,7 @@
                 </h6>
                 <div class="d-flex mt-5">
                   <div>
-                    <h5 class="mb-0 text-uppercase font-weight-normal">
+                    <h5 class="mb-0 text-uppercase text-dark">
                       Jeffrey Harrell
                     <h6 class="subtitle font-weight-normal">Pennsylvania</h6>
                   </div>
@@ -619,15 +590,7 @@
                 </div>
               </div>
               <div class="tab-pane fade" id="t6-3" role="tabpanel">
-                <div class="row mb-3">
-                  <div class="col-lg-6">
-                    <span
-                      class="badge badge-span rounded-pill px-3 py-1 text-light font-weight-medium"
-                      >OUR TESTIMONIALS
-                    </span>
-                  </div>
-                </div>
-                <h3 class="font-weight-medium">
+                <h3 class="text-dark">
                   What our Supporters say about us
                 </h3>
                 <h6 class="subtitle mt-4 font-weight-light">
@@ -638,7 +601,7 @@
                 </h6>
                 <div class="d-flex mt-5">
                   <div>
-                    <h5 class="mb-0 text-uppercase font-weight-normal">
+                    <h5 class="mb-0 text-uppercase text-dark">
                       Chad Rich
                     </h5>
                     <h6 class="subtitle font-weight-normal">Virginia</h6>
@@ -649,15 +612,7 @@
                 </div>
               </div>
               <div class="tab-pane fade" id="t6-4" role="tabpanel">
-                <div class="row mb-3">
-                  <div class="col-lg-6">
-                    <span
-                      class="badge badge-span rounded-pill px-3 py-1 text-light font-weight-medium"
-                      >OUR TESTIMONIALS
-                    </span>
-                  </div>
-                </div>
-                <h3 class="font-weight-medium">
+                <h3 class="text-dark">
                   What our Supporters say about us
                 </h3>
                 <h6 class="subtitle mt-4 font-weight-light">
@@ -668,7 +623,7 @@
                 </h6>
                 <div class="d-flex mt-5">
                   <div>
-                    <h5 class="mb-0 text-uppercase font-weight-normal">
+                    <h5 class="mb-0 text-uppercase text-dark">
                       Shelby Bachert
                     </h5>
                     <h6 class="subtitle font-weight-normal">California</h6>
@@ -694,7 +649,7 @@
             >OUR FINANCIALS</span
           >
           <h2 class="my-3">
-            Community Transformation through Infrastructure Projects
+            Community Transformation Through Infrastructure Projects
           </h2>
         </div>
       </div>
@@ -758,11 +713,11 @@
                 <div
                   class="progress-bar bg-green"
                   role="progressbar"
-                  data-width="25%"
-                  aria-valuenow="25"
+                  data-width="75%"
+                  aria-valuenow="75"
                   aria-valuemin="0"
                   aria-valuemax="100"
-                  style="width: 25%"></div>
+                  style="width: 75%"></div>
               </div>
             </div>
           </div>
