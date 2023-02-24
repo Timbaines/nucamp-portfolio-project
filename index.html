@@ -28,6 +28,53 @@
   </head>
 
   <body>
+    <!-- Donor Give | Modal-->
+    <div class="modal fade" id="giveModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header btn-info-gradient">
+            <h3 class="modal-title text-light" id="exampleModalLongTitle">GIVE TODAY</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4">.col-md-4</div>
+                <div class="col-md-4 ml-auto">.col-md-4 .ml-auto</div>
+              </div>
+              <div class="row">
+                <div class="col-md-3 ml-auto">.col-md-3 .ml-auto</div>
+                <div class="col-md-2 ml-auto">.col-md-2 .ml-auto</div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 ml-auto">.col-md-6 .ml-auto</div>
+              </div>
+              <div class="row">
+                <div class="col-sm-9">
+                  Level 1: .col-sm-9
+                  <div class="row">
+                    <div class="col-8 col-sm-6">
+                      Level 2: .col-8 .col-sm-6
+                    </div>
+                    <div class="col-4 col-sm-6">
+                      Level 2: .col-4 .col-sm-6
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-primary">Donate</button>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+
     <header class="sticky-top">
       <!-- Navbar | Start-->
 
@@ -87,7 +134,7 @@
       </nav>
     </header>
 
-    <!-- Section - Jumbotron | Start -->
+    <!-- Section | HERO | Jumbotron | Start -->
     <div class="container">
       <div class="jumbotron">
         <div class="overlay"></div>
@@ -96,7 +143,6 @@
           <p class="lead col col-md-8 text-light mt-4">
             Leading paragraph goes in this section of the component.
           </p>
-
           <a
             class="btn btn-info-gradient btn-lg border-0 mt-4 text-light"
             href="#"
@@ -106,7 +152,9 @@
           <a
             class="btn btn-outline-ghost btn-md mt-4 ml-4"
             href="#"
-            role="button"
+            type="button"
+            data-toggle="modal"
+            data-target="#giveModal"
             >Give today
           </a>
           <div class="supporters text-light mt-5 mb-4">
@@ -182,123 +230,6 @@
   </div>
 </div>
 
-<!-- Section | Featured Support -->
-<div class="totals py-5">
-  <div class="container">
-    <div class="row">
-        <div class="col-lg-6">
-          <span
-            class="badge badge-span rounded-pill px-3 py-2 text-light font-weight-medium"
-            >WAYS TO GIVE</span
-          >
-          <h4 class="my-3">
-            Community Transformation through Infrastructure Projects
-          </h4>
-        </div>
-      </div>
-      <div class="row row-content">
-        <div class="col-md-4">
-          <div class="card-totals bg-grey-dark">
-            <div class="card-statistic-3 p-4">
-              <div class="card-icon card-icon-large">
-                <i class="fa fa-users" aria-hidden="true"></i>
-              </div>
-              <div class="mb-4">
-                <h5 class="card-title mb-0">Project Support</h5>
-              </div>
-              <div class="row align-items-center mb-2 d-flex">
-                <div class="col-8">
-                  <h2 class="d-flex align-items-center mb-0">15.07k</h2>
-                </div>
-                <div class="col-4 text-right">
-                  <span>9.23% <i class="fa fa-arrow-up"></i></span>
-                </div>
-              </div>
-              <div
-                class="progress mt-1"
-                data-height="8"
-                style="height: 8px">
-                <div
-                  class="progress-bar bg-orange"
-                  role="progressbar"
-                  data-width="25%"
-                  aria-valuenow="25"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                  style="width: 25%"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card-totals bg-grey-dark">
-            <div class="card-statistic-3 p-4">
-              <div class="card-icon card-icon-large">
-                <i class="fa fa-usd" aria-hidden="true"></i>
-              </div>
-              <div class="mb-4">
-                <h5 class="card-title mb-0">Staff Support</h5>
-              </div>
-              <div class="row align-items-center mb-2 d-flex">
-                <div class="col-8">
-                  <h2 class="d-flex align-items-center mb-0">$11.61k</h2>
-                </div>
-                <div class="col-4 text-right">
-                  <span>2.5% <i class="fa fa-arrow-up"></i></span>
-                </div>
-              </div>
-              <div
-                class="progress mt-1"
-                data-height="8"
-                style="height: 8px">
-                <div
-                  class="progress-bar bg-green"
-                  role="progressbar"
-                  data-width="25%"
-                  aria-valuenow="25"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                  style="width: 25%"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card-totals bg-grey-dark">
-            <div class="card-statistic-3 p-4">
-              <div class="card-icon card-icon-large">
-                <i class="fa fa-users" aria-hidden="true"></i>
-              </div>
-              <div class="mb-4">
-                <h5 class="card-title mb-0">Trip Support</h5>
-              </div>
-              <div class="row align-items-center mb-2 d-flex">
-                <div class="col-8">
-                  <h2 class="d-flex align-items-center mb-0">15.07k</h2>
-                </div>
-                <div class="col-4 text-right">
-                  <span>9.23% <i class="fa fa-arrow-up"></i></span>
-                </div>
-              </div>
-              <div
-                class="progress mt-1"
-                data-height="8"
-                style="height: 8px">
-                <div
-                  class="progress-bar bg-cyan"
-                  role="progressbar"
-                  data-width="25%"
-                  aria-valuenow="25"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                  style="width: 25%"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-  </div>
-</div>
 
     <!-- Section | Our Mission -->
     <div class="our-mission py-5">
@@ -309,9 +240,9 @@
               class="badge badge-span rounded-pill px-3 py-2 text-light font-weight-medium"
               >OUR MISSION</span
             >
-            <h4 class="my-3">
+            <h2 class="my-3">
               Community Transformation through Infrastructure Projects
-            </h4>
+            </h2>
             <h6 class="font-weight-light subtitle">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni
               dolorum consequuntur recusandae.
@@ -406,6 +337,85 @@
       </div>
     </div>
 
+    <!-- Section | Ways To Give -->
+<div class="giving py-5">
+  <div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+          <span
+            class="badge badge-span rounded-pill px-3 py-2 text-light font-weight-medium"
+            >WAYS TO GIVE
+            </span>
+          <h2 class="my-3">
+            Community Transformation through Infrastructure Projects
+          </h2>
+        </div>
+      </div>
+      <div class="row row-content">
+        <div class="col-md-4">
+          <div class="card-support bg-midnight">
+            <div class="card-statistic-3 p-4">
+              <div class="card-icon card-icon-large">
+                <img src="img/supporters/support-projects.jpg" alt="">
+              </div>
+              <div class="mb-5">
+
+              </div>
+              <div class="row align-items-center mb-2 d-flex">
+                <div class="col-8">
+                  <h5 class="d-flex align-items-center mb-0">01. Project Giving</h5>
+                </div>
+                <div class="col-4 text-right">
+                  <button class="btn btn-sm btn-outline-ghost text-light" type="button">Give<i class="fa fa-cog ml-2"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card-support bg-midnight">
+            <div class="card-statistic-3 p-4">
+              <div class="card-icon card-icon-large">
+                <img src="img/supporters/support-staff.jpg" alt="Staff Support image">
+              </div>
+              <div class="mb-5">
+                
+              </div>
+              <div class="row align-items-center mb-2 d-flex">
+                <div class="col-8">
+                  <h5 class="d-flex align-items-center mb-0">02. Staff Giving</h5>
+                </div>
+                <div class="col-4 text-right">
+                  <button class="btn btn-sm btn-outline-ghost text-light" type="button">Give<i class="fa fa-user ml-2"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card-support bg-midnight">
+            <div class="card-statistic-3 p-4">
+              <div class="card-icon card-icon-large">
+                <img src="img/supporters/support-trips.jpg" alt="">
+              </div>
+              <div class="mb-5">
+
+              </div>
+              <div class="row align-items-center mb-2 d-flex">
+                <div class="col-8">
+                  <h5 class="d-flex align-items-center mb-0">03. Trip Giving</h5>
+                </div>
+                <div class="col-4 text-right">
+                  <button class="btn btn-sm btn-outline-ghost text-light" type="button">Give<i class="fa fa-plane ml-2"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
     <!-- Section | Our Projects -->
     <div class="our-projects py-5">
     <div class="container">
@@ -415,14 +425,14 @@
             class="badge badge-span rounded-pill px-3 py-2 text-light font-weight-medium"
             >OUR PROJECTS</span
           >
-          <h4 class="my-3">
+          <h2 class="my-3">
             Community Transformation through Infrastructure Projects
-          </h4>
+          </h2>
         </div>
       </div>
       <div class="row row-content row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         <div class="col">
-          <div class="card border-0 mb-4">
+          <div class="card border-0">
             <div class="card-img-overlay-a"></div>
             <img
               src="img/our-projects/our-projects-1.jpg"
@@ -443,7 +453,7 @@
           </div>
         </div>
         <div class="col">
-          <div class="card border-0 mb-4">
+          <div class="card border-0">
             <div class="card-img-overlay-b"></div>
             <img
               src="img/our-projects/our-projects-2.jpg"
@@ -464,7 +474,7 @@
           </div>
         </div>
         <div class="col">
-          <div class="card border-0 mb-4">
+          <div class="card border-0">
             <div class="card-img-overlay-c"></div>
             <img
               src="img/our-projects/our-projects-3.jpg"
@@ -681,11 +691,11 @@
         <div class="col-lg-6">
           <span
             class="badge badge-span rounded-pill px-3 py-2 text-light font-weight-medium"
-            >OUR TOTALS</span
+            >OUR FINANCIALS</span
           >
-          <h4 class="my-3">
+          <h2 class="my-3">
             Community Transformation through Infrastructure Projects
-          </h4>
+          </h2>
         </div>
       </div>
       <div class="row row-content">
@@ -693,7 +703,7 @@
           <div class="card-totals bg-grey-dark">
             <div class="card-statistic-3 p-4">
               <div class="card-icon card-icon-large">
-                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-medkit" aria-hidden="true"></i>
               </div>
               <div class="mb-4">
                 <h5 class="card-title mb-0">Disaster Relief Funds</h5>

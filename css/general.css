@@ -84,9 +84,11 @@ Reusable Compontents
 
 .btn-outline-ghost:hover {
   background-color: #316ce8;
-  border: 2px solid #316ce8;
+  border: 3px inset solid #316ce8;
   color: #ffffff;
 }
+
+/* ----- Modals ----- */
 
 /* ----- Badges ----- */
 

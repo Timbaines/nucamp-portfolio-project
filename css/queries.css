@@ -1,4 +1,8 @@
 @media (max-width: 767px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
   .jumbotron {
     margin-top: 40px;
     margin-bottom: 40px;
@@ -10,6 +14,11 @@
 
   .our-mission .mission-wrapper .lower-box {
     margin-top: 0px;
+  }
+
+  .card {
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 10px rgba(115, 128, 157, 0.8);
   }
 
   .card:hover {
@@ -33,5 +42,9 @@
   .testimonial .testimonial-pill .nav-link.active {
     border-right: 0px solid #0e5fa2;
     border-bottom: 3px solid #0e5fa2;
+  }
+
+  .card-totals {
+    box-shadow: 0px 0px 10px rgba(115, 128, 157, 0.8);
   }
 }
