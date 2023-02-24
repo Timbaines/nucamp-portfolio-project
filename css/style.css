@@ -16,9 +16,79 @@ Section | HERO
   box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.4);
 }
 
+.animated-icon1 {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  margin: 0px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.animated-icon1 span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+.animated-icon1 span {
+  background: #0e5fa2;
+}
+.animated-icon1 span:nth-child(1) {
+  top: 0px;
+}
+
+.animated-icon1 span:nth-child(2) {
+  top: 10px;
+}
+
+.animated-icon1 span:nth-child(3) {
+  top: 20px;
+}
+
+.animated-icon1.open span:nth-child(1) {
+  top: 11px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.animated-icon1.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+.animated-icon1.open span:nth-child(3) {
+  top: 11px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
 /* Jumbotron */
 
-.jumbotron {
+.jumbotron-fluid {
   position: relative;
   border-radius: 20px;
   background-image: linear-gradient(
@@ -29,13 +99,13 @@ Section | HERO
     url(../img/banners/compassion-in-action-banner.jpg);
   background-size: cover;
   background-position: center;
-  box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.8);
+  box-shadow: 0px 0px 20px rgba(115, 128, 157, 0.6);
   overflow: hidden;
-  margin-top: 80px;
-  margin-bottom: 80px;
+  margin-top: 70px;
+  margin-bottom: 70px;
 }
 
-.jumbotron .overlay {
+.jumbotron-fluid .overlay {
   position: absolute;
   top: 0;
   right: 0;
@@ -43,20 +113,25 @@ Section | HERO
   left: 0;
   background-image: linear-gradient(
     45deg,
-    rgba(0, 0, 0, 0.6),
-    rgba(46, 87, 111, 0.4)
+    rgba(0, 0, 0, 0.8),
+    rgba(46, 87, 111, 0)
   );
   z-index: 1;
 }
 
-.jumbotron-inner {
+.hero-inner {
   position: relative;
   z-index: 2;
 }
 
-.jumbotron h1 {
+.jumbotron-fluid h1 {
   font-size: 3.5rem;
   font-weight: 700;
+  margin-left: -16px;
+}
+
+.jumbotron-fluid p {
+  margin-left: -16px;
 }
 
 /* Supporter Images */
@@ -226,14 +301,8 @@ Section | Our Projects
   z-index: 2;
 }
 
-.card body .card a {
+.card-body .card a {
   text-decoration: none !important;
-}
-
-.card a:hover {
-  border-left: 2px solid #e9f5ff;
-  margin-right: -3px;
-  padding: 5px;
 }
 
 /********************************************
