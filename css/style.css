@@ -434,7 +434,10 @@ Page | About Us
 /********************************************
 Section | About Our Mission
 ********************************************/
-
+.project img {
+  border-radius: 20px;
+  box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.8);
+}
 /********************************************
 Section | Text Slider
 ********************************************/
@@ -442,9 +445,9 @@ Section | Text Slider
 .text-slider .row {
   border-radius: 20px;
   margin: 20px 0;
-
   box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.8);
 }
+
 .text-slider .title {
   font-weight: 300;
   line-height: 50px;
