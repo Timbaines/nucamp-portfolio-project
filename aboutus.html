@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS Additional CSS must be placed after Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <!-- External CSS Stylesheet -->
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap"
+      rel="stylesheet" />
+    <!-- Bootstrap Social -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <title>Compassion In Action</title>
+  </head>
+
+  <body>
+    <!-- Navbar | Start-->
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-light mt-2">
+        <a class="navbar-brand" href="index.html">Compassion In Action</a>
+        <button
+          class="navbar-toggler first-button border-0"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent20"
+          aria-controls="navbarSupportedContent20"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <div class="animated-icon">
+            <span></span><span></span><span></span>
+          </div>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent20">
+          <ul class="navbar-nav ml-auto mr-3">
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html"
+                >About <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="giving.html">Ways To Give</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <button
+              class="btn btn-info-gradient text-light my-2 my-sm-0"
+              type="button"
+              data-toggle="modal"
+              data-target="#donorModal">
+              Donor Login
+            </button>
+          </form>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Section | HERO | Jumbotron | Start -->
+    <div class="section">
+    <div class="jumbotron-fluid mx-3 py-5">
+      <div class="container">
+        <div class="overlay"></div>
+        <div class="hero-inner">
+          <span class="text-light">Lorem, ipsum dolor.</span>
+          <h1 class="col col-md-6 text-light">Our <br>Mission</h1>
+          <p class="lead col col-md-8 text-light mt-3">
+            Lorem ipsum dolor sit amet consectetur elit adipisicing elit.
+            Numquam necessitatibus tene pariatur reprehenderit voluptas.
+          </p>
+          <a
+            class="btn btn-info-gradient btn-lg border-0 mt-5 text-light"
+            href="#"
+            role="button"
+            >Learn more
+          </a>
+          <a
+            class="btn btn-outline-ghost btn-md mt-5 ml-4"
+            href="#"
+            type="button"
+            data-toggle="modal"
+            data-target="#giveModal"
+            >Give now
+          </a>
+          <div class="supporters text-light mt-5">
+            <div class="supporter-imgs">
+              <img src="img/supporters/supporter-6.jpg" alt="supporter photo" />
+              <img src="img/supporters/supporter-5.jpg" alt="supporter photo" />
+              <img src="img/supporters/supporter-4.jpg" alt="supporter photo" />
+              <img src="img/supporters/supporter-3.jpg" alt="supporter photo" />
+              <img src="img/supporters/supporter-2.jpg" alt="supporter photo" />
+            </div>
+            <p class="supporter-text ml-2 mt-4">
+              <span class="">250,000+</span> Supporters!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-------------------- Modals | Start -------------------->
+
+    <!-- Modal | Login -->
+    <div
+      class="modal fade"
+      id="donorModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="donorModal"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header text-left ml-3">
+            <h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body mx-3">
+            <div class="md-form mb-5">
+              <i class="fa fa-envelope prefix text-dark"></i>
+              <input
+                type="email"
+                id="defaultForm-email"
+                class="form-control validate" />
+              <label
+                data-error="wrong"
+                data-success="right"
+                for="defaultForm-email"
+                >Your email</label
+              >
+            </div>
+
+            <div class="md-form mb-4">
+              <i class="fa fa-lock prefix text-dark"></i>
+              <input
+                type="password"
+                id="defaultForm-pass"
+                class="form-control validate" />
+              <label
+                data-error="wrong"
+                data-success="right"
+                for="defaultForm-pass"
+                >Your password</label
+              >
+            </div>
+          </div>
+          <div class="modal-footer d-flex justify-content-center">
+            <button class="btn btn-lg btn-info-gradient text-light">
+              Login
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal | Donor Box -->
+    <div
+      class="modal fade"
+      id="giveModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header btn-info-gradient">
+            <h3 class="modal-title text-light" id="exampleModalLongTitle">
+              GIVE TODAY
+            </h3>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4">.col-md-4</div>
+                <div class="col-md-4 ml-auto">.col-md-4 .ml-auto</div>
+              </div>
+              <div class="row">
+                <div class="col-md-3 ml-auto">.col-md-3 .ml-auto</div>
+                <div class="col-md-2 ml-auto">.col-md-2 .ml-auto</div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 ml-auto">.col-md-6 .ml-auto</div>
+              </div>
+              <div class="row">
+                <div class="col-sm-9">
+                  Level 1: .col-sm-9
+                  <div class="row">
+                    <div class="col-8 col-sm-6">Level 2: .col-8 .col-sm-6</div>
+                    <div class="col-4 col-sm-6">Level 2: .col-4 .col-sm-6</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal">
+              Cancel
+            </button>
+            <button type="button" class="btn btn-primary">Donate</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------------------- Modals | End -------------------->
+
+    <!-- Section | About Us -->
+    <div class="giving py-5">
+      <div class="container">
+        <div class="row row-content">
+          <div class="col-lg-6">
+            <span
+              class="badge badge-span rounded-pill px-3 py-2 text-light font-weight-medium"
+              >OUR MISSION
+              </span>
+            <h2 class="my-3">
+              Donate, Volunteer Or Promote Your Efforts From Home
+            </h2>
+            <div class="row">
+              <div class="col-md-12 mt-3">
+                <p>
+                  exercitationem molestias vitae. Ut facilis, quia qui nesciunt
+                  cor consequatur. Sit doloribus delectus quidem dolore
+                  soluta, iste accusamus? Molestias aliquid blanditiis deleniti,
+                  reprehenderit commodi minima! Eum cumque explicabo incidunt. Molestias aliquid blanditiis deleniti, reprehenderit commodi minima! Eum cumque explicabo incidunt.
+                </p>
+                <p>
+                  exercitationem molestias vitae. Ut facilis, quia qui nesciunt
+                  cor consequatur. Sit doloribus delectus quidem dolore
+                  soluta, iste accusamus? 
+                </p>
+              </div>
+              <div class="col-lg-12 mb-5">
+                <a
+                  class="btn btn-info-gradient btn-lg border-0 text-white"
+                  href="#"
+                  ><span>Give now</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <img
+              src="img/nucamp_bg.JPG"
+              class="img-shadow img-fluid"
+              alt="about" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  Text-Slider -->
+<div class="text-slider py-5">
+  <div class="container">
+      <div class="row row-content bg-light justify-content-center">
+          <div class="col-md-10 align-self-center text-center">
+              <h1 class="title">Make An Impact with Your <b class="font-weight-bold">Time & Talents</b><br>  <span class="text-success-gradiant font-weight-bold typewrite" data-period="2000" data-type='[ "Donate", "Volunteer", "Partner" ]'></span></h1>
+              <button class="btn btn-lg btn-info-gradient text-white mt-4">Learn more</button>
+          </div>
+      </div>
+   </div>
+</div>
+
+
+    <!-- Section | Ways To Give -->
+    <div class="py-5">
+      <div class="container">
+        <div class="row row-content">
+          <div class="col-lg-6">
+            <span
+              class="badge badge-span rounded-pill px-3 py-2 text-light font-weight-medium"
+              >WAYS TO GIVE
+            </span>
+            <h2 class="my-3">
+              Making an Impact: Exciting Ways to Give Back to Your Community
+            </h2>
+          </div>
+        </div>
+        <div class="row row-content">
+          <div class="col-md-4">
+            <div class="card-support bg-midnight">
+              <div class="card-statistic-3 p-4">
+                <div class="card-icon card-icon-large">
+                  <img src="img/supporters/support-projects.jpg" alt="" />
+                </div>
+                <div class="mb-5"></div>
+                <div class="row align-items-center mb-2 d-flex">
+                  <div class="col-8">
+                    <h5 class="d-flex align-items-center mb-0">
+                      01. Project Giving
+                    </h5>
+                  </div>
+                  <div class="col-4 text-right">
+                    <button
+                      class="btn btn-sm btn-outline-ghost text-light"
+                      type="button">
+                      Give<i class="fa fa-cog ml-2"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-support bg-midnight">
+              <div class="card-statistic-3 p-4">
+                <div class="card-icon card-icon-large">
+                  <img
+                    src="img/supporters/support-staff.jpg"
+                    alt="Staff Support image" />
+                </div>
+                <div class="mb-5"></div>
+                <div class="row align-items-center mb-2 d-flex">
+                  <div class="col-8">
+                    <h5 class="d-flex align-items-center mb-0">
+                      02. Staff Giving
+                    </h5>
+                  </div>
+                  <div class="col-4 text-right">
+                    <button
+                      class="btn btn-sm btn-outline-ghost text-light"
+                      type="button">
+                      Give<i class="fa fa-user ml-2"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-support bg-midnight">
+              <div class="card-statistic-3 p-4">
+                <div class="card-icon card-icon-large">
+                  <img src="img/supporters/support-trips.jpg" alt="" />
+                </div>
+                <div class="mb-5"></div>
+                <div class="row align-items-center mb-2 d-flex">
+                  <div class="col-8">
+                    <h5 class="d-flex align-items-center mb-0">
+                      03. Trip Giving
+                    </h5>
+                  </div>
+                  <div class="col-4 text-right">
+                    <button
+                      class="btn btn-sm btn-outline-ghost text-light"
+                      type="button">
+                      Give<i class="fa fa-plane ml-2"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+ 
+
+
+    <!-- Section | Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row row-content">
+          <div class="col col-sm-6">
+            <h5 class="mb-4 font-weight-medium">Compassion In Action</h5>
+            <h5>Links</h5>
+            <ul class="list-unstyled">
+              <li><a class="text-dark" href="index.html">Home</a></li>
+              <li><a class="text-dark" href="aboutus.html">About</a></li>
+              <li><a class="text-dark" href="#">Projects</a></li>
+              <li>
+                <a class="text-dark" href="contactus.html">Ways To Give</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-3"></div>
+          <div class="col-sm-3">
+            <a class="btn btn-social-icon" href="http://facebook.com/"
+              ><i class="fa fa-facebook"></i>
+            </a>
+            <a class="btn btn-social-icon" href="http://instagram.com/"
+              ><i class="fa fa-instagram"></i>
+            </a>
+            <a class="btn btn-social-icon" href="http://twitter.com/"
+              ><i class="fa fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
