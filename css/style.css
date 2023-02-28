@@ -78,6 +78,10 @@ Section | Header | Hero | Jumbotron
 
 /* Jumbotron */
 
+.jumbotron-container {
+  padding: 50px 120px 50px 120px;
+}
+
 .jumbotron-fluid {
   position: relative;
   border-radius: 20px;
@@ -90,8 +94,6 @@ Section | Header | Hero | Jumbotron
   background-size: cover;
   background-position: center;
   overflow: hidden;
-  margin-top: 40px;
-  margin-bottom: 40px;
 }
 
 .jumbotron-fluid .jumbotron-overlay {
