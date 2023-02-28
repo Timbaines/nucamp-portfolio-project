@@ -1,5 +1,6 @@
 ///////////////////////////////////////////////////////////
 // Animated Mobile Menu
+
 $(document).ready(function () {
   $(".first-button").on("click", function () {
     $(".icon-mobile-nav").toggleClass("open");

@@ -4,6 +4,7 @@
     <!-- Required meta tags always come first -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#faf8f5" />
     <!-- Bootstrap CSS Additional CSS must be placed after Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -34,7 +35,7 @@
 <div class="modal fade" id="donorModal" tabindex="-1" role="dialog" aria-labelledby="donorModal"
 aria-hidden="true">
 <div class="modal-dialog" role="document">
-  <div class="modal-content">
+  <div class="modal-content border-0">
     <div class="modal-header text-left ml-3">
       <h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -63,48 +64,38 @@ aria-hidden="true">
 </div>
 
 <!-- Modal | Donor Box -->
-<div class="modal fade" id="giveModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header btn-info-gradient">
-        <h3 class="modal-title text-light" id="exampleModalLongTitle">Donate</h3>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-    <div class="modal-body">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-4">.col-md-4</div>
-          <div class="col-md-4 ml-auto">.col-md-4 .ml-auto</div>
+  <div class="modal fade" id="giveModal" tabindex="-1" role="dialog" aria-labelledby="modal-dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content border-0">
+        <div class="modal-header">
+          <h3 class="modal-title text-dark" id="exampleModalLongTitle">Make A Donation</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-        <div class="row">
-          <div class="col-md-3 ml-auto">.col-md-3 .ml-auto</div>
-          <div class="col-md-2 ml-auto">.col-md-2 .ml-auto</div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 ml-auto">.col-md-6 .ml-auto</div>
-        </div>
-        <div class="row">
-          <div class="col-sm-9">
-            Level 1: .col-sm-9
-            <div class="row">
-              <div class="col-8 col-sm-6">
-                Level 2: .col-8 .col-sm-6
+        <div class="modal-body">
+          <div class="container-fluid d-flex justify-content-around">
+         
+              <div class="g-col-sm-3">
+                  <button class="btn btn-md btn-info-gradient">$100</button>
               </div>
-              <div class="col-4 col-sm-6">
-                Level 2: .col-4 .col-sm-6
+              <div class="g-col-sm-3">
+                <button class="btn btn-md btn-info-gradient">$150</button>
               </div>
-             </div>
+              <div class="g-col-sm-3">
+                <button class="btn btn-md btn-info-gradient">$250</button>
+              </div>
+              <div class="g-col-sm-3">
+                <button class="btn btn-md btn-info-gradient">$500</button>
+              </div>
+    
             </div>
           </div>
+          <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary">Donate</button>
         </div>
       </div>
-      <div class="modal-footer">
-      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-      <button type="button" class="btn btn-primary">Donate</button>
-     </div>
-     </div>
     </div>
   </div>
 
@@ -112,9 +103,7 @@ aria-hidden="true">
 
       <!-- Navbar | Start-->
     <div class="noise-overlay"></div>
-
-    
-    <header>
+    <header class="sticky-top">
       <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="index.html">Compassion In Action</a>
         <button class="navbar-toggler first-button border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent20"
@@ -157,16 +146,16 @@ aria-hidden="true">
             <p>COMPASSION IN ACTION</p>
             <h1>Help us make an impact. <span class="text-success-gradiant font-weight-bold typewrite" data-period="2000" data-type='[ "Donate", "Volunteer", "Promote" ]'></span></h1>
             <p class="mt-4">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem quia sint a?
+             We offer medical assistance and construction projects to hard to reach places in the world.
             </p>
             <a
             class="btn btn-info-gradient btn-lg mt-4 border-0"
-            href="#"
+            href="aboutus.html"
             role="button"
             >Learn more
             </a>
             <a
-            class="btn btn-outline-ghost btn-md mt-4 ml-4"
+            class="btn btn-outline-ghost btn-lg mt-4 ml-4"
             href="#"
             type="button"
             data-toggle="modal"
@@ -205,7 +194,7 @@ aria-hidden="true">
             >WAYS TO GIVE</span
           >
           <h2 class="my-3">
-            Community Transformation through Infrastructure Projects
+            You can feel good when supporting our organization 
           </h2>
         </div>
       </div> 
@@ -221,9 +210,9 @@ aria-hidden="true">
                     01
                   </p>
                   <h5 class="card-title text-light">Project Support</h5>
-                  
                   <p class="card-text">
-                    <small class="text-light">Last updated 3 mins ago</small>
+                    <small class="text-light"><a href="projects.html" class="text-light
+                      ">Read more<i class="fa fa-long-arrow-right ml-2" aria-hidden="true"></i></a></small>
                   </p>
                 </div>
               </div>
@@ -242,7 +231,8 @@ aria-hidden="true">
                   </p>
                   <h5 class="card-title text-light">Staff Support</h5>
                   <p class="card-text">
-                    <small class="text-light">Last updated 3 mins ago</small>
+                    <small class="text-light"><a href="projects.html" class="text-light
+                      ">Read more<i class="fa fa-long-arrow-right ml-2" aria-hidden="true"></i></a></small>
                   </p>
                 </div>
               </div>
@@ -261,7 +251,8 @@ aria-hidden="true">
                   </p>
                   <h5 class="card-title text-light">Trip Support</h5>
                   <p class="card-text">
-                    <small class="text-light">Last updated 3 mins ago</small>
+                    <small class="text-light"><a href="projects.html" class="text-light
+                      ">Read more<i class="fa fa-long-arrow-right ml-2" aria-hidden="true"></i></a></small>
                   </p>
                 </div>
               </div>
@@ -361,7 +352,7 @@ aria-hidden="true">
                     <img
                       src="img/our-mission/our-mission-2.jpg"
                       class="rounded img-shadow img-fluid"
-                      alt="wrapkit" />
+                      alt="" />
                   </div>
                   <div class="col-md-12 img-hover mb-4">
                     <img
@@ -710,11 +701,12 @@ aria-hidden="true">
           <div class="card-totals bg-0">
             <div class="card-statistic p-4">
               <div class="mb-4">
-                <h5 class="card-title mb-0">Download our app</h5>
+                <h5 class="card-title mb-0">Certifying Organizations</h5>
               </div>
               <div class="row align-items-center mb-2 d-flex">
-                <div class="col-8">
-                  
+                <div class="supporter-imgs d-flex">
+                  <img src="img/supporters/supporter-1.jpg" alt="">
+                  <img src="img/supporters/supporter-1.jpg" alt="">
                 </div>
               </div>
             </div>
@@ -735,7 +727,7 @@ aria-hidden="true">
             <ul class="list-unstyled">
               <li><a class="text-dark" href="#">Home</a></li>
               <li><a class="text-dark" href="aboutus.html">About</a></li>
-              <li><a class="text-dark" href="#">Projects</a></li>
+              <li><a class="text-dark" href="projects.html">Projects</a></li>
               <li><a class="text-dark" href="contactus.html">Ways To Give</a></li>
             </ul>
           </div>

@@ -3,6 +3,11 @@ body {
   background: #faf8f5;
 }
 
+.sticky-top {
+  background-color: #faf8f5;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.099);
+}
+
 .noise-overlay {
   position: fixed;
   left: 0;
@@ -41,6 +46,17 @@ h2 {
 }
 
 /********************************************
+Modals
+********************************************/
+#donorModal,
+#giveModal,
+.modal-content {
+  border-radius: 12px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+/********************************************
 Utility Classes
 ********************************************/
 
@@ -56,7 +72,7 @@ Reusable Compontents
 /* ----- Buttons ----- */
 
 .btn-md {
-  padding: 6px 20px;
+  padding: 6px 15px;
   font-size: 20px;
 }
 
@@ -101,7 +117,7 @@ Reusable Compontents
 }
 
 .btn-outline-ghost {
-  border: 1.5px solid #0e5fa2;
+  border: 1px solid #0e5fa2;
   color: #0e5fa2;
 }
 
