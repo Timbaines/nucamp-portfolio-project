@@ -1,10 +1,12 @@
-/* Animated Nav Toggler */
+///////////////////////////////////////////////////////////
+// Animated Mobile Menu
 $(document).ready(function () {
   $(".first-button").on("click", function () {
-    $(".animated-icon").toggleClass("open");
+    $(".icon-mobile-nav").toggleClass("open");
   });
 
-  //Typewriter
+  ///////////////////////////////////////////////////////////
+  // Typewriter
 
   var TxtType = function (el, toRotate, period) {
     this.toRotate = toRotate;

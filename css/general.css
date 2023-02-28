@@ -25,8 +25,15 @@ Typography System
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6 {
   font-family: "Poppins", sans-serif;
+}
+
+h2 {
+  font-weight: 600;
 }
 
 .font-weight-medium {
@@ -36,10 +43,7 @@ h3 {
 /********************************************
 Utility Classes
 ********************************************/
-.section {
-  max-width: 1366px;
-  transform: translate(14%);
-}
+
 .row-content {
   padding: 60px 0;
   min-height: 200px;
@@ -111,7 +115,7 @@ Reusable Compontents
 /* ----- Badges ----- */
 
 .badge {
-  line-height: 14px;
+  line-height: 16px;
 }
 
 .badge-span {

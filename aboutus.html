@@ -28,81 +28,8 @@
   </head>
 
   <body>
-    <!-- Navbar | Start-->
-    <header class="sticky-top">
-      <nav class="navbar navbar-expand-lg navbar-light mt-2">
-        <a class="navbar-brand" href="index.html">Compassion In Action</a>
-        <button
-          class="navbar-toggler first-button border-0"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent20"
-          aria-controls="navbarSupportedContent20"
-          aria-expanded="false"
-          aria-label="Toggle navigation">
-          <div class="animated-icon">
-            <span></span><span></span><span></span>
-          </div>
-        </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent20">
-          <ul class="navbar-nav ml-auto mr-3">
-            <li class="nav-item">
-              <a class="nav-link" href="aboutus.html"
-                >About <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="projects.html">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="giving.html">Ways To Give</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <button
-              class="btn btn-info-gradient text-light my-2 my-sm-0"
-              type="button"
-              data-toggle="modal"
-              data-target="#donorModal">
-              Donor Login
-            </button>
-          </form>
-        </div>
-      </nav>
-    </header>
-
-    <!-- Section | HERO | Jumbotron | Start -->
-    <div class="jumbotron-fluid mx-3 py-5">
-      <div class="container">
-        <div class="overlay"></div>
-        <div class="jumbotron-inner">
-          <h1 class="col col-md-6 text-light">Our <br> Mission</h1>
-          <a
-            class="btn btn-info-gradient btn-lg mt-4 border-0 text-light"
-            href="#"
-            type="button"
-            data-toggle="modal"
-            data-target="#giveModal"
-            >Give now
-        </a>
-          <div class="supporters text-light mt-5">
-            <div class="supporter-imgs">
-              <img src="img/supporters/supporter-6.jpg" alt="supporter photo" />
-              <img src="img/supporters/supporter-5.jpg" alt="supporter photo" />
-              <img src="img/supporters/supporter-4.jpg" alt="supporter photo" />
-              <img src="img/supporters/supporter-3.jpg" alt="supporter photo" />
-              <img src="img/supporters/supporter-2.jpg" alt="supporter photo" />
-            </div>
-            <p class="supporter-text ml-2 mt-4">
-              <span class="">250,000+</span> Supporters!
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-------------------- Modals | Start -------------------->
+     <!-------------------- Modals | Start -------------------->
 
     <!-- Modal | Login -->
     <div
@@ -223,6 +150,81 @@
 
     <!-------------------- Modals | End -------------------->
 
+    <!-- Navbar | Start-->
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html">Compassion In Action</a>
+        <button
+          class="navbar-toggler first-button border-0"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent20"
+          aria-controls="navbarSupportedContent20"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <div class="icon-mobile-nav">
+            <span></span><span></span><span></span>
+          </div>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent20">
+          <ul class="navbar-nav ml-auto mr-3">
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html"
+                >About <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="giving.html">Ways To Give</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <button
+              class="btn btn-info-gradient text-light my-2 my-sm-0"
+              type="button"
+              data-toggle="modal"
+              data-target="#donorModal">
+              Donor Login
+            </button>
+          </form>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Section | HERO | Jumbotron | Start -->
+    <div class="noise-overlay"></div>
+    <div class="jumbotron-fluid mx-3 py-5">
+      <div class="container">
+        <div class="jumbotron-overlay"></div>
+        <div class="jumbotron-inner">
+          <h1 class="col col-md-6 text-light">Our <br> Mission</h1>
+          <a
+            class="btn btn-info-gradient btn-lg mt-4 border-0 text-light"
+            href="#"
+            type="button"
+            data-toggle="modal"
+            data-target="#giveModal"
+            >Give now
+        </a>
+          <div class="supporters d-flex text-light mt-5">
+            <div class="supporter-imgs">
+              <img src="img/supporters/supporter-6.jpg" alt="supporter photo" />
+              <img src="img/supporters/supporter-5.jpg" alt="supporter photo" />
+              <img src="img/supporters/supporter-4.jpg" alt="supporter photo" />
+              <img src="img/supporters/supporter-3.jpg" alt="supporter photo" />
+              <img src="img/supporters/supporter-2.jpg" alt="supporter photo" />
+            </div>
+            <p class="supporter-text ml-2 mt-4">
+              <span class="">250,000+</span> Supporters!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Section | About Us -->
     <div class="project py-5">
       <div class="container">
@@ -273,90 +275,71 @@
 
 
     <!-- Section | Ways To Give -->
-    <div class="py-5">
-      <div class="container">
-        <div class="row row-content">
-          <div class="col-lg-6">
-            <span
-              class="badge badge-span rounded-pill px-3 py-2 text-light font-weight-medium"
-              >WAYS TO GIVE
-            </span>
-            <h2 class="my-3">
-              Making an Impact: Exciting Ways to Give Back to Your Community
-            </h2>
+    <div class="container py-5"> 
+      <div class="row">
+        <div class="col-lg-6">
+          <span
+            class="badge badge-span rounded-pill px-3 py-2 text-light font-weight-medium"
+            >WAYS TO GIVE</span
+          >
+          <h2 class="my-3">
+            Community Transformation through Infrastructure Projects
+          </h2>
+        </div>
+      </div> 
+      <div class="row row-content">
+        <div class="col-md-4">
+          <div class="card-support mb-3">
+            <div class="support-overlay-bg1">
+            </div>
+            <div class="row g-0">
+              <div class="col-lg-8">
+                <div class="card-body">
+                  <h5 class="card-title text-light">Project Support</h5>
+                  <p class="card-text text-light">
+                    Give now
+                  </p>
+                  <p class="card-text">
+                    <small class="text-light">Last updated 3 mins ago</small>
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="row row-content">
-          <div class="col-md-4">
-            <div class="card-support bg-midnight">
-              <div class="card-statistic-3 p-4">
-                <div class="card-icon card-icon-large">
-                  <img src="img/supporters/support-projects.jpg" alt="" />
-                </div>
-                <div class="mb-5"></div>
-                <div class="row align-items-center mb-2 d-flex">
-                  <div class="col-8">
-                    <h5 class="d-flex align-items-center mb-0">
-                      01. Project Giving
-                    </h5>
-                  </div>
-                  <div class="col-4 text-right">
-                    <button
-                      class="btn btn-sm btn-outline-ghost text-light"
-                      type="button">
-                      Give<i class="fa fa-cog ml-2"></i>
-                    </button>
-                  </div>
+        <div class="col-md-4">
+          <div class="card-support mb-3">
+            <div class="support-overlay-bg2">
+            </div>
+            <div class="row g-0">
+              <div class="col-lg-8">
+                <div class="card-body">
+                  <h5 class="card-title text-light">Staff Support</h5>
+                  <p class="card-text text-light">
+                    Give now
+                  </p>
+                  <p class="card-text">
+                    <small class="text-light">Last updated 3 mins ago</small>
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card-support bg-midnight">
-              <div class="card-statistic-3 p-4">
-                <div class="card-icon card-icon-large">
-                  <img
-                    src="img/supporters/support-staff.jpg"
-                    alt="Staff Support image" />
-                </div>
-                <div class="mb-5"></div>
-                <div class="row align-items-center mb-2 d-flex">
-                  <div class="col-8">
-                    <h5 class="d-flex align-items-center mb-0">
-                      02. Staff Giving
-                    </h5>
-                  </div>
-                  <div class="col-4 text-right">
-                    <button
-                      class="btn btn-sm btn-outline-ghost text-light"
-                      type="button">
-                      Give<i class="fa fa-user ml-2"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card-support mb-3">
+            <div class="support-overlay-bg3">
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card-support bg-midnight">
-              <div class="card-statistic-3 p-4">
-                <div class="card-icon card-icon-large">
-                  <img src="img/supporters/support-trips.jpg" alt="" />
-                </div>
-                <div class="mb-5"></div>
-                <div class="row align-items-center mb-2 d-flex">
-                  <div class="col-8">
-                    <h5 class="d-flex align-items-center mb-0">
-                      03. Trip Giving
-                    </h5>
-                  </div>
-                  <div class="col-4 text-right">
-                    <button
-                      class="btn btn-sm btn-outline-ghost text-light"
-                      type="button">
-                      Give<i class="fa fa-plane ml-2"></i>
-                    </button>
-                  </div>
+            <div class="row g-0">
+              <div class="col-lg-8">
+                <div class="card-body">
+                  <h5 class="card-title text-light">Trip Support</h5>
+                  <p class="card-text text-light">
+                    Give now
+                  </p>
+                  <p class="card-text">
+                    <small class="text-light">Last updated 3 mins ago</small>
+                  </p>
                 </div>
               </div>
             </div>
@@ -368,7 +351,7 @@
       <!--  Text-Slider -->
      <div class="text-slider py-5">
        <div class="container">
-         <div class="row row-content bg-light justify-content-center">
+         <div class="row row-content justify-content-center">
            <div class="col-md-10 align-self-center text-center">
               <h1 class="title">Make An Impact with Your <b class="font-weight-bold">Time & Talents</b><br>  <span class="text-success-gradiant font-weight-bold typewrite" data-period="2000" data-type='[ "Donate", "Volunteer", "Partner" ]'></span></h1>
               <button class="btn btn-lg btn-info-gradient text-white mt-4">Learn more</button>

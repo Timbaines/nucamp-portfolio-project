@@ -4,7 +4,9 @@ Section | Header | Hero | Jumbotron
 
 /* Navbar */
 
-.animated-icon {
+/* Mobile-Nav */
+
+.icon-mobile-nav {
   width: 30px;
   height: 20px;
   position: relative;
@@ -20,7 +22,7 @@ Section | Header | Hero | Jumbotron
   cursor: pointer;
 }
 
-.animated-icon span {
+.icon-mobile-nav span {
   display: block;
   position: absolute;
   height: 2px;
@@ -38,22 +40,22 @@ Section | Header | Hero | Jumbotron
   transition: 0.25s ease-in-out;
 }
 
-.animated-icon span {
+.icon-mobile-nav span {
   background: #0e5fa2;
 }
-.animated-icon span:nth-child(1) {
+.icon-mobile-nav span:nth-child(1) {
   top: 0px;
 }
 
-.animated-icon span:nth-child(2) {
+.icon-mobile-nav span:nth-child(2) {
   top: 10px;
 }
 
-.animated-icon span:nth-child(3) {
+.icon-mobile-nav span:nth-child(3) {
   top: 20px;
 }
 
-.animated-icon.open span:nth-child(1) {
+.icon-mobile-nav.open span:nth-child(1) {
   top: 11px;
   -webkit-transform: rotate(135deg);
   -moz-transform: rotate(135deg);
@@ -61,12 +63,12 @@ Section | Header | Hero | Jumbotron
   transform: rotate(135deg);
 }
 
-.animated-icon.open span:nth-child(2) {
+.icon-mobile-nav.open span:nth-child(2) {
   opacity: 0;
   left: -60px;
 }
 
-.animated-icon.open span:nth-child(3) {
+.icon-mobile-nav.open span:nth-child(3) {
   top: 11px;
   -webkit-transform: rotate(-135deg);
   -moz-transform: rotate(-135deg);
@@ -87,13 +89,12 @@ Section | Header | Hero | Jumbotron
     url(../img/banners/compassion-in-action-banner.jpg);
   background-size: cover;
   background-position: center;
-  box-shadow: 0px 0px 20px rgba(115, 128, 157, 0.6);
   overflow: hidden;
   margin-top: 40px;
   margin-bottom: 40px;
 }
 
-.jumbotron-fluid .overlay {
+.jumbotron-fluid .jumbotron-overlay {
   position: absolute;
   top: 0;
   right: 0;
@@ -104,7 +105,6 @@ Section | Header | Hero | Jumbotron
     rgba(0, 0, 0, 0.8),
     rgba(46, 87, 111, 0)
   );
-  z-index: 1;
 }
 
 .jumbotron-inner {
@@ -123,7 +123,7 @@ Section | Header | Hero | Jumbotron
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 3.3rem;
   font-weight: 700;
 }
 
@@ -158,13 +158,8 @@ Section | Header | Hero | Jumbotron
 
 /* Supporter Images */
 .supporters {
-  display: flex;
   align-items: center;
   gap: 1.6rem;
-}
-
-.supporters-imgs {
-  display: flex;
 }
 
 .supporter-imgs img {
@@ -172,11 +167,71 @@ Section | Header | Hero | Jumbotron
   width: 3.3rem;
   border-radius: 50%;
   border: 3px solid #ffffff;
+  box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.3);
   margin-right: -1.5rem;
 }
 
 .supporter-text span {
   font-weight: 700;
+}
+
+/********************************************
+Section | Ways To Give
+********************************************/
+
+.card-support {
+  border-radius: 15px;
+  border: none;
+  position: relative;
+  box-shadow: 0px 0px 20px rgba(115, 128, 157, 0.7);
+  overflow: hidden;
+  position: relative;
+}
+
+.support-overlay-bg1,
+.support-overlay-bg2,
+.support-overlay-bg3 {
+  position: absolute;
+  background-size: cover;
+  background-position: top;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  filter: grayscale(1);
+}
+
+.support-overlay-bg1:hover,
+.support-overlay-bg2:hover,
+.support-overlay-bg3:hover {
+  filter: grayscale(0);
+}
+
+.support-overlay-bg1 {
+  background-image: linear-gradient(
+      45deg,
+      rgba(41, 46, 73, 0.9),
+      rgba(83, 105, 118, 0.5)
+    ),
+    url(../img/our-projects/our-projects-1.jpg);
+}
+
+.support-overlay-bg2 {
+  background-image: linear-gradient(
+      45deg,
+      rgba(41, 46, 73, 0.9),
+      rgba(83, 105, 118, 0.5)
+    ),
+    url(../img/our-projects/our-projects-2.jpg);
+}
+
+.support-overlay-bg3 {
+  background-image: linear-gradient(
+      45deg,
+      rgba(41, 46, 73, 0.9),
+      rgba(83, 105, 118, 0.5)
+    ),
+    url(../img/our-projects/our-projects-3.jpg);
 }
 
 /********************************************
@@ -194,8 +249,7 @@ Section | Our Mission |
 }
 
 .our-mission .img-shadow {
-  -webkit-box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.8);
-  box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.8);
+  box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.7);
 }
 
 .our-mission .mission-wrapper .img-hover {
@@ -215,55 +269,22 @@ Section | Our Mission |
 }
 
 /********************************************
-Section | Ways To Give
-********************************************/
-
-.card-support {
-  border-radius: 15px;
-  border: none;
-  position: relative;
-  margin-bottom: 30px;
-  box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.8);
-}
-
-.bg-midnight {
-  background: linear-gradient(to right, #232526, #0e5fa2) !important;
-  color: #fff;
-}
-
-.card-support .card-statistic-3 .card-icon {
-  text-align: center;
-  margin-left: 15px;
-  margin-bottom: 30px;
-  color: #000;
-  position: absolute;
-  left: -5px;
-  top: -20px;
-}
-
-.card-icon img {
-  border-radius: 100%;
-  border: 3px solid #e9f5ff;
-  height: 80px;
-  width: 80px;
-}
-
-/********************************************
 Section | Our Projects
 ********************************************/
 
-.card {
+.card-project {
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.8);
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.095);
   transition: all 0.4s;
 }
 
-.card:hover {
+.card-project:hover {
   transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.095);
 }
 
-.card,
+.card-project,
 .card-body,
 .card-title,
 .card-text {
@@ -271,59 +292,46 @@ Section | Our Projects
   z-index: 2;
 }
 
-.card .card-img-overlay-a {
+.project-overlay-bg1,
+.project-overlay-bg2,
+.project-overlay-bg3 {
+  background-size: cover;
+  background-position: top;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  filter: grayscale(1);
+}
+
+.project-overlay-bg1 {
   position: absolute;
   background-image: linear-gradient(
       45deg,
       rgba(41, 46, 73, 0.9),
-      rgba(83, 105, 118, 0.7)
+      rgba(83, 105, 118, 0.5)
     ),
     url(../img/our-projects/our-projects-1.jpg);
-  background-size: cover;
-  background-position: top;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 2;
 }
 
-.card .card-img-overlay-b {
+.project-overlay-bg2 {
   position: absolute;
   background-image: linear-gradient(
       45deg,
       rgba(41, 46, 73, 0.9),
-      rgba(83, 105, 118, 0.7)
+      rgba(83, 105, 118, 0.5)
     ),
     url(../img/our-projects/our-projects-2.jpg);
-  background-size: cover;
-  background-position: top;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 2;
 }
 
-.card .card-img-overlay-c {
+.project-overlay-bg3 {
   position: absolute;
   background-image: linear-gradient(
       45deg,
       rgba(41, 46, 73, 0.9),
-      rgba(83, 105, 118, 0.7)
+      rgba(83, 105, 118, 0.5)
     ),
     url(../img/our-projects/our-projects-3.jpg);
-  background-size: cover;
-  background-position: top;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 2;
-}
-
-.card-body .card a {
-  text-decoration: none !important;
 }
 
 /********************************************
@@ -402,7 +410,7 @@ Section | Our Totals
   border: none;
   position: relative;
   margin-bottom: 30px;
-  box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.8);
+  box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.7);
 }
 
 .bg-grey-dark {
@@ -410,11 +418,11 @@ Section | Our Totals
   color: #fff;
 }
 
-.card-totals .card-statistic-3 .card-icon-large .fa {
+.card-totals .card-statistic .card-icon-large .fa {
   font-size: 110px;
 }
 
-.card-totals .card-statistic-3 .card-icon {
+.card-totals .card-statistic .card-icon {
   text-align: center;
   line-height: 50px;
   margin-left: 15px;
@@ -455,10 +463,12 @@ Page | About Us
 /********************************************
 Section | About Our Mission
 ********************************************/
+
 .project img {
   border-radius: 20px;
   box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.8);
 }
+
 /********************************************
 Section | Text Slider
 ********************************************/
@@ -466,7 +476,6 @@ Section | Text Slider
 .text-slider .row {
   border-radius: 20px;
   margin: 20px 0;
-  box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.8);
 }
 
 .text-slider .title {
