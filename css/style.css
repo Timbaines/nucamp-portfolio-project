@@ -1,20 +1,8 @@
 /********************************************
-Section | HERO
+Section | Header | Hero | Jumbotron
 ********************************************/
 
 /* Navbar */
-
-.navbar {
-  background-color: #e9f5ff;
-  /*
-  box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.4);
-  padding: 20px;
-  */
-}
-.dropdown-menu {
-  background-color: #e9f5ff;
-  box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.4);
-}
 
 .animated-icon {
   width: 30px;
@@ -119,7 +107,7 @@ Section | HERO
   z-index: 1;
 }
 
-.hero-inner {
+.jumbotron-inner {
   position: relative;
   z-index: 2;
 }
@@ -134,8 +122,41 @@ Section | HERO
   margin-left: -16px;
 }
 
-/* Supporter Images */
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
 
+.hero h1 span {
+  font-size: 3.5rem;
+  background: #0e5fa2;
+  background: -webkit-linear-gradient(
+    legacy-direction(to right),
+    #0e5fa2 0%,
+    #3486c9 100%
+  );
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#0e5fa2),
+    to(#3486c9)
+  );
+  background: -webkit-linear-gradient(left, #0e5fa2 0%, #3486c9 100%);
+  background: -o-linear-gradient(left, #0e5fa2 0%, #3486c9 100%);
+  background: linear-gradient(to right, #0e5fa2 0%, #3486c9 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-img {
+  border-radius: 12px;
+  box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.3);
+  overflow: hidden;
+}
+
+/* Supporter Images */
 .supporters {
   display: flex;
   align-items: center;
@@ -150,7 +171,7 @@ Section | HERO
   height: 3.3rem;
   width: 3.3rem;
   border-radius: 50%;
-  border: 3px solid #e9f5ff;
+  border: 3px solid #ffffff;
   margin-right: -1.5rem;
 }
 

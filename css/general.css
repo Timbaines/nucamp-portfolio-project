@@ -1,6 +1,20 @@
 body {
   font-family: "Poppins", sans-serif;
-  background: #e9f5ff;
+  background: #faf8f5;
+}
+
+.noise-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(/img/noise.png);
+  background-position: 0, 0;
+  background-size: auto;
+  background-repeat: repeat;
+  opacity: 0.3;
+  z-index: -1000;
 }
 
 /********************************************
@@ -44,6 +58,7 @@ Reusable Compontents
 
 .btn-info-gradient {
   background: #0e5fa2;
+  color: #ffffff;
   background: -webkit-linear-gradient(
     legacy-direction(to right),
     #0e5fa2 0%,
@@ -63,6 +78,7 @@ Reusable Compontents
 
 .btn-info-gradient:hover {
   background: #316ce8;
+  color: #ffffff;
   background: -webkit-linear-gradient(
     legacy-direction(to right),
     #316ce8 0%,
@@ -81,13 +97,13 @@ Reusable Compontents
 }
 
 .btn-outline-ghost {
-  border: 1.5px solid #e9f5ff;
-  color: #e9f5ff;
+  border: 1.5px solid #0e5fa2;
+  color: #0e5fa2;
 }
 
 .btn-outline-ghost:hover {
-  background-color: #e9f5ff;
-  color: #316ce8;
+  background: -webkit-linear-gradient(left, #316ce8 0%, #0e5fa2 100%);
+  color: #ffffff;
 }
 
 /* ----- Modals ----- */
