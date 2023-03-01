@@ -4,6 +4,7 @@
     <!-- Required meta tags always come first -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#faf8f5" />
     <!-- Bootstrap CSS Additional CSS must be placed after Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -28,8 +29,7 @@
   </head>
 
   <body>
-
-     <!-------------------- Modals | Start -------------------->
+    <!-------------------- Modals | Start -------------------->
 
     <!-- Modal | Login -->
     <div
@@ -151,6 +151,7 @@
     <!-------------------- Modals | End -------------------->
 
     <!-- Navbar | Start-->
+    <div class="noise-overlay"></div>
     <header class="sticky-top">
       <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="index.html">Compassion In Action</a>
@@ -162,7 +163,7 @@
           aria-controls="navbarSupportedContent20"
           aria-expanded="false"
           aria-label="Toggle navigation">
-          <div class="icon-mobile-nav">
+          <div class="nav-toggle-btn">
             <span></span><span></span><span></span>
           </div>
         </button>
@@ -195,40 +196,49 @@
     </header>
 
     <!-- Section | HERO | Jumbotron | Start -->
-    <div class="noise-overlay"></div>
     <div class="jumbotron-container">
-    <div class="jumbotron-fluid py-5">
-      <div class="container">
-        <div class="jumbotron-overlay"></div>
-        <div class="jumbotron-inner">
-          <h1 class="col col-md-4 text-light">Our Mission</h1>
-          <a
-            class="btn btn-info-gradient btn-lg mt-3 border-0 text-light"
-            href="#"
-            type="button"
-            data-toggle="modal"
-            data-target="#giveModal"
-            >Give now
-        </a>
-          <div class="supporters d-flex text-light mt-5">
-            <div class="supporter-imgs">
-              <img src="img/supporters/supporter-6.jpg" alt="supporter photo" />
-              <img src="img/supporters/supporter-5.jpg" alt="supporter photo" />
-              <img src="img/supporters/supporter-4.jpg" alt="supporter photo" />
-              <img src="img/supporters/supporter-3.jpg" alt="supporter photo" />
-              <img src="img/supporters/supporter-2.jpg" alt="supporter photo" />
+      <div class="jumbotron-fluid py-5">
+        <div class="container">
+          <div class="jumbotron-overlay"></div>
+          <div class="jumbotron-inner">
+            <h1 class="col col-md-4 text-light">Our Mission</h1>
+            <a
+              class="btn btn-info-gradient btn-lg mt-3 border-0 text-light"
+              href="#"
+              type="button"
+              data-toggle="modal"
+              data-target="#giveModal"
+              >Give now
+            </a>
+            <div class="supporters d-flex text-light mt-5">
+              <div class="supporter-imgs">
+                <img
+                  src="img/supporters/supporter-6.jpg"
+                  alt="supporter photo" />
+                <img
+                  src="img/supporters/supporter-5.jpg"
+                  alt="supporter photo" />
+                <img
+                  src="img/supporters/supporter-4.jpg"
+                  alt="supporter photo" />
+                <img
+                  src="img/supporters/supporter-3.jpg"
+                  alt="supporter photo" />
+                <img
+                  src="img/supporters/supporter-2.jpg"
+                  alt="supporter photo" />
+              </div>
+              <p class="supporter-text ml-2 mt-4">
+                <span class="">250,000+</span> Supporters!
+              </p>
             </div>
-            <p class="supporter-text ml-2 mt-4">
-              <span class="">250,000+</span> Supporters!
-            </p>
           </div>
-        </div> 
         </div>
       </div>
     </div>
 
-     <!-- Section | Our Mission -->
-     <div class="our-mission py-5">
+    <!-- Section | Our Mission -->
+    <div class="our-mission py-5">
       <div class="container">
         <div class="row row-content">
           <div class="col-lg-6">
@@ -240,7 +250,8 @@
               Community Transformation through Infrastructure Projects
             </h2>
             <h6 class="font-weight-light subtitle">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnidolorum consequuntur recusandaesit amet consectetur.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Magnidolorum consequuntur recusandaesit amet consectetur.
             </h6>
             <div class="row">
               <div class="col-md-6 mt-3">
@@ -332,68 +343,75 @@
       </div>
     </div>
 
-
     <!-- Section | About Us -->
     <div class="project">
       <div class="container">
         <div class="row row-content">
+          <div class="col-lg-6 order-last order-lg-first">
+            <span
+              class="badge badge-span rounded-pill px-3 py-2 text-light font-weight-medium"
+              >WELL DRILLING
+            </span>
+            <h2 class="my-3">Clean Water Initiative</h2>
+            <div class="row">
+              <div class="col-md-12">
+                <p>
+                  We believe that sustainable work is locally-led. Along with
+                  implementing community-owned water projects, our local
+                  partners help facilitate comprehensive water, sanitation, and
+                  hygiene (WASH) programming to protect everyone’s long-term
+                  health.
+                </p>
+                <p>
+                  771 million people lack basic access to clean and safe
+                  drinking water. We’re on a mission to change that.
+                </p>
+              </div>
+              <div class="col-lg-12 mt-2 mb-4">
+                <a
+                  class="btn btn-info-gradient btn-lg text-light"
+                  href="#"
+                  type="button"
+                  data-toggle="modal"
+                  data-target="#giveModal"
+                  >Support this project</a
+                >
+              </div>
+            </div>
+          </div>
           <div class="col-lg-6">
             <img
               src="img/our-projects/our-projects-1.jpg"
               class="box-shadow-primary img-fluid mb-5"
               alt="about" />
           </div>
-          <div class="col-lg-6 order-last order-lg-first">
-            <span
-              class="badge badge-span rounded-pill px-3 py-2 text-light font-weight-medium"
-              >WHO WE ARE
-              </span>
-            <h2 class="my-3">
-              Clean Water Initiative
-            </h2>
-            <div class="row">
-              <div class="col-lg-12">
-                <p>
-                  We believe that sustainable work is locally-led. Along with implementing community-owned water projects, our local partners help facilitate comprehensive water, sanitation, and hygiene (WASH) programming to protect everyone’s long-term health.
-                </p>
-                <p>
-                  771 million people lack basic access to clean and safe drinking water. We’re on a mission to change that. 
-                </p>
-              </div>
-              <div class="col-lg-12 mt-2 mb-5">
-                <a
-            class="btn btn-info-gradient btn-lg text-light"
-            href="#"
-            type="button"
-            data-toggle="modal"
-            data-target="#giveModal"
-            >Give now
-          </a>
-              </div>
-            </div>
-          </div>
-          
-          </div>
         </div>
       </div>
     </div>
 
-
-     <!--  Text-Slider -->
-     <div class="text-slider py-5">
+    <!--  Text-Slider -->
+    <div class="text-slider py-5">
       <div class="container">
         <div class="row row-content justify-content-center">
           <div class="col-md-10 align-self-center text-center">
-             <h1 class="title">Make An Impact With Your <b class="font-weight-bold">Time & Talents</b><br>  <span class="text-success-gradiant font-weight-bold typewrite" data-period="2000" data-type='[ "Donate", "Volunteer", "Partner" ]'></span></h1>
-             <button class="btn btn-lg btn-info-gradient text-white mt-4">Learn more</button>
+            <h1 class="title">
+              Make An Impact With Your
+              <b class="font-weight-bold">Time & Talents</b><br />
+              <span
+                class="text-success-gradiant font-weight-bold typewrite"
+                data-period="2000"
+                data-type='[ "Donate", "Volunteer", "Partner" ]'></span>
+            </h1>
+            <button class="btn btn-lg btn-info-gradient text-white mt-4">
+              Learn more
+            </button>
           </div>
         </div>
       </div>
     </div>
 
-
     <!-- Section | Ways To Give -->
-    <div class="container py-5"> 
+    <div class="container py-5">
       <div class="row">
         <div class="col-lg-6">
           <span
@@ -401,25 +419,26 @@
             >WAYS TO GIVE</span
           >
           <h2 class="my-3">
-            You Can Feel Good When Supporting Our Organization 
+            You Can Feel Good When Supporting Our Organization
           </h2>
         </div>
-      </div> 
+      </div>
       <div class="row row-content">
         <div class="col-md-4">
           <div class="card-support mb-3 box-shadow-primary">
-            <div class="support-overlay-bg1">
-            </div>
+            <div class="support-overlay-bg1"></div>
             <div class="row g-0">
               <div class="col-lg-10">
                 <div class="card-body">
-                  <p class="card-text text-light">
-                    01
-                  </p>
+                  <p class="card-text text-light">01</p>
                   <h5 class="card-title text-light">Project Support</h5>
                   <p class="card-text">
-                    <small class="text-light"><a href="projects.html" class="text-light
-                      ">Read more<i class="fa fa-long-arrow-right ml-2" aria-hidden="true"></i></a></small>
+                    <small class="text-light"
+                      ><a href="projects.html" class="text-light"
+                        >Read more<i
+                          class="fa fa-long-arrow-right ml-2"
+                          aria-hidden="true"></i></a
+                    ></small>
                   </p>
                 </div>
               </div>
@@ -428,18 +447,19 @@
         </div>
         <div class="col-md-4">
           <div class="card-support mb-3 box-shadow-primary">
-            <div class="support-overlay-bg2">
-            </div>
+            <div class="support-overlay-bg2"></div>
             <div class="row g-0">
               <div class="col-lg-10">
                 <div class="card-body">
-                  <p class="card-text text-light">
-                    02
-                  </p>
+                  <p class="card-text text-light">02</p>
                   <h5 class="card-title text-light">Staff Support</h5>
                   <p class="card-text">
-                    <small class="text-light"><a href="projects.html" class="text-light
-                      ">Read more<i class="fa fa-long-arrow-right ml-2" aria-hidden="true"></i></a></small>
+                    <small class="text-light"
+                      ><a href="projects.html" class="text-light"
+                        >Read more<i
+                          class="fa fa-long-arrow-right ml-2"
+                          aria-hidden="true"></i></a
+                    ></small>
                   </p>
                 </div>
               </div>
@@ -448,18 +468,19 @@
         </div>
         <div class="col-md-4">
           <div class="card-support mb-3 box-shadow-primary">
-            <div class="support-overlay-bg3">
-            </div>
+            <div class="support-overlay-bg3"></div>
             <div class="row g-0">
               <div class="col-lg-10">
                 <div class="card-body">
-                  <p class="card-text text-light">
-                    03
-                  </p>
+                  <p class="card-text text-light">03</p>
                   <h5 class="card-title text-light">Trip Support</h5>
                   <p class="card-text">
-                    <small class="text-light"><a href="projects.html" class="text-light
-                      ">Read more<i class="fa fa-long-arrow-right ml-2" aria-hidden="true"></i></a></small>
+                    <small class="text-light"
+                      ><a href="projects.html" class="text-light"
+                        >Read more<i
+                          class="fa fa-long-arrow-right ml-2"
+                          aria-hidden="true"></i></a
+                    ></small>
                   </p>
                 </div>
               </div>
@@ -468,7 +489,6 @@
         </div>
       </div>
     </div>
-
 
     <!-- Section | Footer -->
     <footer class="site-footer">
@@ -501,7 +521,6 @@
         </div>
       </div>
     </footer>
-
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>

@@ -3,8 +3,11 @@
 
 $(document).ready(function () {
   $(".first-button").on("click", function () {
-    $(".icon-mobile-nav").toggleClass("open");
+    $(".nav-toggle-btn").toggleClass("open");
   });
+
+  ///////////////////////////////////////////////////////////
+  // Mobile Nav Overlay Functionality
 
   ///////////////////////////////////////////////////////////
   // Offcanvas Menu
