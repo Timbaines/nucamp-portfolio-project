@@ -5,7 +5,6 @@ body {
 
 .sticky-top {
   background-color: #faf8f5;
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.099);
 }
 
 .noise-overlay {
@@ -45,6 +44,10 @@ h2 {
   font-weight: 500;
 }
 
+.bg-beige {
+  background-color: #faf8f5;
+}
+
 /********************************************
 Modals
 ********************************************/
@@ -60,9 +63,23 @@ Modals
 Utility Classes
 ********************************************/
 
+/****** Backgrounds ******/
+
+.bg-beige {
+  background-color: #faf8f5;
+}
+
+.bg-orange {
+  background-color: #f9900e;
+}
+
 .row-content {
   padding: 60px 0;
   min-height: 200px;
+}
+
+.box-shadow-primary {
+  box-shadow: 0px 0px 20px rgba(115, 128, 157, 0.7);
 }
 
 /********************************************
