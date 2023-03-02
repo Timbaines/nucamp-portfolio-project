@@ -261,6 +261,10 @@ Section | Our Mission |
   margin-top: 100px;
 }
 
+.card-icon {
+  color: #0e5fa2;
+}
+
 /********************************************
 Section | Our Projects
 ********************************************/
@@ -430,6 +434,11 @@ Section | Our Totals
 .bg-orange {
   background: linear-gradient(to right, #f9900e 0%, #ffba56 100%) !important;
   color: #fff;
+}
+
+.credibility img {
+  height: 100px;
+  width: 100px auto;
 }
 
 /********************************************
