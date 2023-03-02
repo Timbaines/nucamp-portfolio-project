@@ -164,7 +164,7 @@ Section | Header | Hero | Jumbotron
   height: 3.3rem;
   width: 3.3rem;
   border-radius: 50%;
-  border: 3px solid #ffffff;
+  border: 3px solid #faf8f5;
   box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.3);
   margin-right: -1.5rem;
 }
@@ -510,4 +510,31 @@ Section | Text Slider
 .text-slider .btn-md {
   padding: 15px 45px;
   font-size: 16px;
+}
+
+/********************************************
+Page | Ways To Give
+********************************************/
+
+.giving-card {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.input-group .input-container {
+  border: 1px solid #e3e3e3;
+  background: #ffffff !important;
+  border-radius: 30px !important;
+}
+
+.input-group-text {
+  background: none;
+}
+
+.giving-card .btn {
+  border-radius: 20px;
+}
+
+.giving-card .card-footer {
+  background-color: #ffffff;
 }
