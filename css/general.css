@@ -64,14 +64,6 @@ Utility Classes
 
 /****** Backgrounds ******/
 
-.bg-beige {
-  background-color: #faf8f5;
-}
-
-.bg-orange {
-  background-color: #f9900e;
-}
-
 .row-content {
   padding: 60px 0;
   min-height: 200px;

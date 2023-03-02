@@ -516,6 +516,7 @@ Section | Text Slider
 Page | Ways To Give
 ********************************************/
 
+/****** Project Giving ******/
 .giving-card {
   border-radius: 20px;
   overflow: hidden;
@@ -537,4 +538,14 @@ Page | Ways To Give
 
 .giving-card .card-footer {
   background-color: #ffffff;
+}
+
+/****** Staff Giving ******/
+.media {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.media .btn {
+  border-radius: 20px;
 }
