@@ -90,7 +90,7 @@ Section | Header | Hero | Jumbotron
       rgba(41, 46, 73, 0.2),
       rgba(83, 105, 118, 0.2)
     ),
-    url(../img/banners/compassion-in-action-banner.jpg);
+    url(../img/banners/compassion-in-action-about-us-banner.jpg);
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -241,7 +241,6 @@ Section | Our Mission |
 }
 
 .our-mission .subtitle {
-  color: #8d97ad;
   line-height: 24px;
 }
 
@@ -296,6 +295,18 @@ Section | Our Projects
   bottom: 0;
   left: 0;
   filter: grayscale(1);
+}
+
+.project-overlay-bg1:hover,
+.project-overlay-bg2:hover,
+.project-overlay-bg3:hover {
+  background-size: cover;
+  background-position: top;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  filter: grayscale(0);
 }
 
 .project-overlay-bg1 {
@@ -369,7 +380,6 @@ Section | Testimonial
 
 .testimonial .testimonial-pill .nav-link.active {
   background: transparent;
-  color: #8d97ad;
   border-right: 3px solid #0e5fa2;
 }
 
@@ -407,7 +417,7 @@ Section | Our Totals
 
 .bg-grey-dark {
   background: linear-gradient(to right, #232526, #0e5fa2) !important;
-  color: #fff;
+  color: #ffffff;
 }
 
 .card-totals .card-statistic .card-icon-large .fa {
@@ -426,31 +436,20 @@ Section | Our Totals
   opacity: 0.1;
 }
 
+/* Linear Gradients for Disaster Relief and Donations YTS Progress Bars  */
 .bg-green {
   background: linear-gradient(135deg, #23bdb8 0%, #43e794 100%) !important;
-  color: #fff;
+  color: #ffffff;
 }
 
 .bg-orange {
   background: linear-gradient(to right, #f9900e 0%, #ffba56 100%) !important;
-  color: #fff;
+  color: #ffffff;
 }
 
 .credibility img {
   height: 100px;
   width: 100px auto;
-}
-
-/********************************************
-Section | Footer
-********************************************/
-
-.site-footer {
-  padding: 20px 0;
-}
-
-.btn-social-icon {
-  color: #0e5fa2;
 }
 
 /********************************************
@@ -548,4 +547,104 @@ Page | Ways To Give
 
 .media .btn {
   border-radius: 20px;
+}
+
+/********************************************
+Page | Checkout Summary
+********************************************/
+
+.checkout h5 {
+  font-size: 16px;
+}
+
+.checkout span {
+  font-size: 14px;
+}
+
+/********************************************
+Section | Footer
+********************************************/
+
+.site-footer {
+  margin: 0;
+}
+
+footer a {
+  color: #454545;
+  font-size: 14px;
+  transition-duration: 0.2s;
+}
+
+footer a:hover {
+  color: #0e5fa2;
+  text-decoration: none;
+}
+
+.copy {
+  font-size: 12px;
+  padding: 20px;
+  border-top: 1px solid #0e5fa2;
+}
+
+/****** Social Icons ******/
+
+ul.social-network {
+  list-style: none;
+  display: inline;
+  padding: 0;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 5px 5px;
+}
+
+.social-network a.social-icon:hover {
+  background-color: #0e5fa2;
+}
+
+.social-network a.social-icon:hover i {
+  color: #ffffff;
+}
+
+.social-circle li a {
+  border: 1px solid #0e5fa2;
+  display: inline-block;
+  margin: 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 35px;
+  height: 35px;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.social-circle li i {
+  margin: 0;
+  line-height: 35px;
+  text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.social-circle i {
+  color: #0e5fa2;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
 }

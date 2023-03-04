@@ -95,13 +95,13 @@
       id="giveModal"
       tabindex="-1"
       role="dialog"
-      aria-labelledby="exampleModalCenterTitle"
+      aria-labelledby="modal-dialog"
       aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header btn-info-gradient">
-            <h3 class="modal-title text-light" id="exampleModalLongTitle">
-              GIVE TODAY
+      <div class="modal-dialog" role="document">
+        <div class="modal-content border-0">
+          <div class="modal-header border-0 d-flex justify-content-center">
+            <h3 class="modal-title text-dark" id="exampleModalLongTitle">
+              General Fund
             </h3>
             <button
               type="button"
@@ -112,30 +112,28 @@
             </button>
           </div>
           <div class="modal-body">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-4">.col-md-4</div>
-                <div class="col-md-4 ml-auto">.col-md-4 .ml-auto</div>
+            <div class="container p-3">
+              <img
+                src="img/our-projects/our-projects-1.jpg"
+                alt=""
+                class="img-fluid" />
+            </div>
+            <div class="container-fluid d-flex justify-content-around">
+              <div class="g-col-sm-3">
+                <button class="btn btn-md btn-info-gradient">$100</button>
               </div>
-              <div class="row">
-                <div class="col-md-3 ml-auto">.col-md-3 .ml-auto</div>
-                <div class="col-md-2 ml-auto">.col-md-2 .ml-auto</div>
+              <div class="g-col-sm-3">
+                <button class="btn btn-md btn-info-gradient">$150</button>
               </div>
-              <div class="row">
-                <div class="col-md-6 ml-auto">.col-md-6 .ml-auto</div>
+              <div class="g-col-sm-3">
+                <button class="btn btn-md btn-info-gradient">$250</button>
               </div>
-              <div class="row">
-                <div class="col-sm-9">
-                  Level 1: .col-sm-9
-                  <div class="row">
-                    <div class="col-8 col-sm-6">Level 2: .col-8 .col-sm-6</div>
-                    <div class="col-4 col-sm-6">Level 2: .col-4 .col-sm-6</div>
-                  </div>
-                </div>
+              <div class="g-col-sm-3">
+                <button class="btn btn-md btn-info-gradient">$500</button>
               </div>
             </div>
           </div>
-          <div class="modal-footer">
+          <div class="modal-footer border-0">
             <button
               type="button"
               class="btn btn-secondary"
@@ -167,7 +165,6 @@
             <span></span><span></span><span></span>
           </div>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarSupportedContent20">
           <ul class="navbar-nav ml-auto mr-3">
             <li class="nav-item">
@@ -237,26 +234,6 @@
       </div>
     </div>
 
-    <!-- Section | Search Bar 
-    <div class="container">
-      <div class="row row-content">
-        <div class="col-sm-6">
-          <div class="d-flex">
-            <div class="searchbar">
-              <input
-                class="search_input"
-                type="text"
-                name=""
-                placeholder="Search" />
-              <a href="#" class="search_icon"><i class="fa fa-search"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  -->
-
     <!-- Section | Giving Options -->
 
     <div class="project-support py-5">
@@ -275,28 +252,37 @@
           <div class="col mb-5">
             <div class="giving-card bg-white box-shadow-primary h-100">
               <img
-                src="img/our-projects/our-projects-1.jpg"
+                src="img/giving/giving-well-drilling.jpg"
                 class="card-img-top"
                 alt="" />
               <div class="card-body">
-                <h5 class="card-title text-dark">Nicaragua: Well Drilling</h5>
+                <span
+                  class="badge bg-green rounded-pill mb-3 px-3 py-1 text-dark font-weight-medium"
+                  >WEST AFRICA
+                </span>
+                <span
+                  class="badge bg-orange rounded-pill px-3 py-1 text-dark font-weight-medium"
+                  >PROJECT
+                </span>
+                <h5 class="card-title text-dark">Well Drilling</h5>
               </div>
-              <div class="input-group mb-3 px-3">
+              <div class="input-group mb-3 px-4">
                 <div class="input-container d-flex bg-white p-2 rounded">
                   <div class="input-group-prepend">
                     <span class="input-group-text text-dark border-0">$</span>
                   </div>
                   <input
-                    type="number"
+                    type="text"
                     class="form-control border-0"
                     aria-label="Amount (to the nearest dollar)" />
                   <div class="input-group-append">
-                    <button
+                    <a
+                      href="checkout.html"
                       class="btn btn-dark"
                       type="button"
-                      id="button-addon1">
+                      id="checkout">
                       Give
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -323,24 +309,33 @@
                 class="card-img-top"
                 alt="" />
               <div class="card-body">
-                <h5 class="card-title text-dark">Nicaragua: Well Drilling</h5>
+                <span
+                  class="badge bg-green rounded-pill mb-3 px-3 py-1 text-dark font-weight-medium"
+                  >NICARAGUA
+                </span>
+                <span
+                  class="badge bg-orange rounded-pill px-3 py-1 text-dark font-weight-medium"
+                  >PROJECT
+                </span>
+                <h5 class="card-title text-dark">Welding</h5>
               </div>
-              <div class="input-group mb-3 px-3">
+              <div class="input-group mb-3 px-4">
                 <div class="input-container d-flex bg-white p-2 rounded">
                   <div class="input-group-prepend">
                     <span class="input-group-text text-dark border-0">$</span>
                   </div>
                   <input
-                    type="number"
+                    type="text"
                     class="form-control border-0"
                     aria-label="Amount (to the nearest dollar)" />
                   <div class="input-group-append">
-                    <button
+                    <a
+                      href="checkout.html"
                       class="btn btn-dark"
                       type="button"
-                      id="button-addon1">
+                      id="checkout">
                       Give
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -367,24 +362,33 @@
                 class="card-img-top"
                 alt="" />
               <div class="card-body">
-                <h5 class="card-title text-dark">Nicaragua: Well Drilling</h5>
+                <span
+                  class="badge bg-green rounded-pill mb-3 px-3 py-1 text-dark font-weight-medium"
+                  >BOLIVIA
+                </span>
+                <span
+                  class="badge bg-orange rounded-pill px-3 py-1 text-dark font-weight-medium"
+                  >PROJECT
+                </span>
+                <h5 class="card-title text-dark">Shipping</h5>
               </div>
-              <div class="input-group mb-3 px-3">
+              <div class="input-group mb-3 px-4">
                 <div class="input-container d-flex bg-white p-2 rounded">
                   <div class="input-group-prepend">
                     <span class="input-group-text text-dark border-0">$</span>
                   </div>
                   <input
-                    type="number"
+                    type="text"
                     class="form-control border-0"
                     aria-label="Amount (to the nearest dollar)" />
                   <div class="input-group-append">
-                    <button
+                    <a
+                      href="checkout.html"
                       class="btn btn-dark"
                       type="button"
-                      id="button-addon1">
+                      id="checkout">
                       Give
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -414,7 +418,7 @@
           <div class="col-lg-6">
             <span
               class="badge badge-span rounded-pill px-3 py-2 text-light font-weight-medium"
-              >TRIP GIVING</span
+              >TRIP SUPPORT</span
             >
             <h2 class="my-3">Support Our Disaster Relief Program</h2>
           </div>
@@ -424,28 +428,37 @@
           <div class="col mb-5">
             <div class="giving-card bg-white box-shadow-primary h-100">
               <img
-                src="img/our-projects/our-projects-1.jpg"
+                src="img/giving/giving-earthquake-relief.jpg"
                 class="card-img-top"
                 alt="" />
               <div class="card-body">
-                <h5 class="card-title text-dark">Nicaragua: Well Drilling</h5>
+                <span
+                  class="badge bg-green rounded-pill mb-3 px-3 py-1 text-dark font-weight-medium"
+                  >TURKEY
+                </span>
+                <span
+                  class="badge bg-orange rounded-pill px-3 py-1 text-dark font-weight-medium"
+                  >SUPPORT
+                </span>
+                <h5 class="card-title text-dark">Earthquake Relief</h5>
               </div>
-              <div class="input-group mb-3 px-3">
+              <div class="input-group mb-3 px-4">
                 <div class="input-container d-flex bg-white p-2 rounded">
                   <div class="input-group-prepend">
                     <span class="input-group-text text-dark border-0">$</span>
                   </div>
                   <input
-                    type="number"
+                    type="text"
                     class="form-control border-0"
                     aria-label="Amount (to the nearest dollar)" />
                   <div class="input-group-append">
-                    <button
+                    <a
+                      href="checkout.html"
                       class="btn btn-dark"
                       type="button"
-                      id="button-addon1">
+                      id="checkout">
                       Give
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -468,28 +481,37 @@
           <div class="col mb-5">
             <div class="giving-card bg-white box-shadow-primary h-100">
               <img
-                src="img/our-projects/our-projects-2.jpg"
+                src="img/giving/giving-cyclone-relief.jpg"
                 class="card-img-top"
                 alt="" />
               <div class="card-body">
-                <h5 class="card-title text-dark">Nicaragua: Well Drilling</h5>
+                <span
+                  class="badge bg-green rounded-pill mb-3 px-3 py-1 text-dark font-weight-medium"
+                  >PERU
+                </span>
+                <span
+                  class="badge bg-orange rounded-pill px-3 py-1 text-dark font-weight-medium"
+                  >SUPPORT
+                </span>
+                <h5 class="card-title text-dark">Cyclone Damage</h5>
               </div>
-              <div class="input-group mb-3 px-3">
+              <div class="input-group mb-3 px-4">
                 <div class="input-container d-flex bg-white p-2 rounded">
                   <div class="input-group-prepend">
                     <span class="input-group-text text-dark border-0">$</span>
                   </div>
                   <input
-                    type="number"
+                    type="text"
                     class="form-control border-0"
                     aria-label="Amount (to the nearest dollar)" />
                   <div class="input-group-append">
-                    <button
+                    <a
+                      href="checkout.html"
                       class="btn btn-dark"
                       type="button"
-                      id="button-addon1">
+                      id="checkout">
                       Give
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -512,28 +534,37 @@
           <div class="col mb-5">
             <div class="giving-card bg-white box-shadow-primary h-100">
               <img
-                src="img/our-projects/our-projects-3.jpg"
+                src="img/giving/giving-flooding-relief.jpg"
                 class="card-img-top"
                 alt="" />
               <div class="card-body">
-                <h5 class="card-title text-dark">Nicaragua: Well Drilling</h5>
+                <span
+                  class="badge bg-green rounded-pill mb-3 px-3 py-1 text-dark font-weight-medium"
+                  >VANUATU
+                </span>
+                <span
+                  class="badge bg-orange rounded-pill px-3 py-1 text-dark font-weight-medium"
+                  >SUPPORT
+                </span>
+                <h5 class="card-title text-dark">Flood Relief</h5>
               </div>
-              <div class="input-group mb-3 px-3">
+              <div class="input-group mb-3 px-4">
                 <div class="input-container d-flex bg-white p-2 rounded">
                   <div class="input-group-prepend">
                     <span class="input-group-text text-dark border-0">$</span>
                   </div>
                   <input
-                    type="number"
+                    type="text"
                     class="form-control border-0"
                     aria-label="Amount (to the nearest dollar)" />
                   <div class="input-group-append">
-                    <button
+                    <a
+                      href="checkout.html"
                       class="btn btn-dark"
                       type="button"
-                      id="button-addon1">
+                      id="checkout">
                       Give
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -563,7 +594,7 @@
           <div class="col-lg-6">
             <span
               class="badge badge-span rounded-pill px-3 py-2 text-light font-weight-medium"
-              >STAFF GIVING</span
+              >STAFF SUPPORT</span
             >
             <h2 class="my-3">Help Fund A Team Member's Travel Expense</h2>
           </div>
@@ -576,24 +607,30 @@
                 class="align-self-center mr-3"
                 alt="..." />
               <div class="media-body">
-                <h5 class="mt-3 ml-4">Hanna Glover</h5>
-                <div class="input-group mb-3 px-3">
+                <h5 class="mt-3 ml-4">
+                  Hannah Glover<span
+                    class="text-muted font-weight-normal font-italic">
+                    Volunteer</span
+                  >
+                </h5>
+                <div class="input-group mb-3 px-4">
                   <div
                     class="input-container d-flex justify-content-center bg-white p-2">
                     <div class="input-group-prepend">
                       <span class="input-group-text text-dark border-0">$</span>
                     </div>
                     <input
-                      type="number"
+                      type="text"
                       class="form-control border-0"
                       aria-label="Amount (to the nearest dollar)" />
                     <div class="input-group-append">
-                      <button
+                      <a
+                        href="checkout.html"
                         class="btn btn-dark"
                         type="button"
-                        id="button-addon1">
+                        id="checkout">
                         Give
-                      </button>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -605,24 +642,30 @@
                 class="align-self-center mr-3"
                 alt="..." />
               <div class="media-body">
-                <h5 class="mt-3 ml-4">Jeffrey Harrell</h5>
-                <div class="input-group mb-3 px-3">
+                <h5 class="mt-3 ml-4">
+                  Jeffrey Harrell<span
+                    class="text-muted font-weight-normal font-italic">
+                    Volunteer</span
+                  >
+                </h5>
+                <div class="input-group mb-3 px-4">
                   <div
                     class="input-container d-flex justify-content-center bg-white p-2">
                     <div class="input-group-prepend">
                       <span class="input-group-text text-dark border-0">$</span>
                     </div>
                     <input
-                      type="number"
+                      type="text"
                       class="form-control border-0"
                       aria-label="Amount (to the nearest dollar)" />
                     <div class="input-group-append">
-                      <button
+                      <a
+                        href="checkout.html"
                         class="btn btn-dark"
                         type="button"
-                        id="button-addon1">
+                        id="checkout">
                         Give
-                      </button>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -634,24 +677,30 @@
                 class="align-self-center mr-3"
                 alt="..." />
               <div class="media-body">
-                <h5 class="mt-3 ml-4">Chad Rich</h5>
-                <div class="input-group mb-3 px-3">
+                <h5 class="mt-3 ml-4">
+                  Chad Rich<span
+                    class="text-muted font-weight-normal font-italic">
+                    Volunteer</span
+                  >
+                </h5>
+                <div class="input-group mb-3 px-4">
                   <div
                     class="input-container d-flex justify-content-center bg-white p-2">
                     <div class="input-group-prepend">
                       <span class="input-group-text text-dark border-0">$</span>
                     </div>
                     <input
-                      type="number"
+                      type="text"
                       class="form-control border-0"
                       aria-label="Amount (to the nearest dollar)" />
                     <div class="input-group-append">
-                      <button
+                      <a
+                        href="checkout.html"
                         class="btn btn-dark"
                         type="button"
                         id="button-addon1">
                         Give
-                      </button>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -665,24 +714,30 @@
                 class="align-self-center mr-3"
                 alt="..." />
               <div class="media-body">
-                <h5 class="mt-3 ml-4">Shelby Ellison</h5>
-                <div class="input-group mb-3 px-3">
+                <h5 class="mt-3 ml-4">
+                  Shelby Carter<span
+                    class="text-muted font-weight-normal font-italic">
+                    Volunteer</span
+                  >
+                </h5>
+                <div class="input-group mb-3 px-4">
                   <div
                     class="input-container d-flex justify-content-center bg-white p-2">
                     <div class="input-group-prepend">
                       <span class="input-group-text text-dark border-0">$</span>
                     </div>
                     <input
-                      type="number"
+                      type="text"
                       class="form-control border-0"
                       aria-label="Amount (to the nearest dollar)" />
                     <div class="input-group-append">
-                      <button
+                      <a
+                        href="checkout.html"
                         class="btn btn-dark"
                         type="button"
-                        id="button-addon1">
+                        id="checkout">
                         Give
-                      </button>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -694,24 +749,30 @@
                 class="align-self-center mr-3"
                 alt="..." />
               <div class="media-body">
-                <h5 class="mt-3 ml-4">Shelby Ellison</h5>
-                <div class="input-group mb-3 px-3">
+                <h5 class="mt-3 ml-4">
+                  Jason Delp<span
+                    class="text-muted font-weight-normal font-italic">
+                    Volunteer</span
+                  >
+                </h5>
+                <div class="input-group mb-3 px-4">
                   <div
                     class="input-container d-flex justify-content-center bg-white p-2">
                     <div class="input-group-prepend">
                       <span class="input-group-text text-dark border-0">$</span>
                     </div>
                     <input
-                      type="number"
+                      type="text"
                       class="form-control border-0"
                       aria-label="Amount (to the nearest dollar)" />
                     <div class="input-group-append">
-                      <button
+                      <a
+                        href="checkout.html"
                         class="btn btn-dark"
                         type="button"
-                        id="button-addon1">
+                        id="checkout">
                         Give
-                      </button>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -723,24 +784,30 @@
                 class="align-self-center mr-3"
                 alt="..." />
               <div class="media-body">
-                <h5 class="mt-3 ml-4">Shelby Ellison</h5>
-                <div class="input-group mb-3 px-3">
+                <h5 class="mt-3 ml-4">
+                  Allison Warren<span
+                    class="text-muted font-weight-normal font-italic">
+                    Volunteer</span
+                  >
+                </h5>
+                <div class="input-group mb-3 px-4">
                   <div
                     class="input-container d-flex justify-content-center bg-white p-2">
                     <div class="input-group-prepend">
                       <span class="input-group-text text-dark border-0">$</span>
                     </div>
                     <input
-                      type="number"
+                      type="text"
                       class="form-control border-0"
                       aria-label="Amount (to the nearest dollar)" />
                     <div class="input-group-append">
-                      <button
+                      <a
+                        href="checkout.html"
                         class="btn btn-dark"
                         type="button"
-                        id="button-addon1">
+                        id="checkout">
                         Give
-                      </button>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -752,32 +819,75 @@
     </div>
 
     <!-- Section | Footer -->
-    <footer class="site-footer">
-      <div class="container">
-        <div class="row row-content">
-          <div class="col col-sm-6">
-            <h5 class="mb-4 font-weight-medium">Compassion In Action</h5>
-            <h5>Links</h5>
-            <ul class="list-unstyled">
-              <li><a class="text-dark" href="index.html">Home</a></li>
-              <li><a class="text-dark" href="aboutus.html">About</a></li>
-              <li><a class="text-dark" href="projects.html">Projects</a></li>
-              <li>
-                <a class="text-dark" href="#">Ways To Give</a>
-              </li>
-            </ul>
+    <footer class="site-footer" role="contentinfo">
+      <div class="footer-middle">
+        <div class="container">
+          <div class="row row-content">
+            <div class="col-md-4 col-sm-3">
+              <div class="footer-pad">
+                <h4 class="text-dark">Compassion In Action</h4>
+                <ul class="list-unstyled">
+                  <li class="font-weight-bold">Address:</li>
+                  <li>PO Box: 318</li>
+                  <li>Virginia Beach, Virginia</li>
+                  <li class="font-weight-bold">Phone:</li>
+                  <li>757-222-3333</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-3">
+              <div class="footer-pad">
+                <h4 class="text-dark">Site Links</h4>
+                <ul class="list-unstyled text-dark">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="aboutus.html">About</a></li>
+                  <li><a href="projects.html">Projects</a></li>
+                  <li><a href="#">Ways To Give</a></li>
+                  <li>
+                    <a
+                      href="#"
+                      type="button"
+                      data-toggle="modal"
+                      data-target="#donorModal"
+                      >Donor Login
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <h4 class="text-dark">Follow Us</h4>
+              <ul class="social-network social-circle">
+                <li>
+                  <a href="#" class="social-icon" title="Facebook"
+                    ><i class="fa fa-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" class="social-icon" title="Linkedin"
+                    ><i class="fa fa-linkedin"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" class="social-icon" title="Twitter"
+                    ><i class="fa fa-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" class="social-icon" title="Instagram"
+                    ><i class="fa fa-instagram"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="col-sm-3"></div>
-          <div class="col-sm-3">
-            <a class="btn btn-social-icon" href="http://facebook.com/"
-              ><i class="fa fa-facebook"></i>
-            </a>
-            <a class="btn btn-social-icon" href="http://instagram.com/"
-              ><i class="fa fa-instagram"></i>
-            </a>
-            <a class="btn btn-social-icon" href="http://twitter.com/"
-              ><i class="fa fa-twitter"></i>
-            </a>
+          <div class="row">
+            <div class="col-md-12 copy">
+              <p class="text-center text-dark">
+                &copy; Copyright 2023 - Compassion In Action. All rights
+                reserved.
+              </p>
+            </div>
           </div>
         </div>
       </div>
