@@ -6,7 +6,9 @@
   "scripts": {
     "lite": "lite-server",
     "scss": "sass css:css",
-    "start": "npm run lite",
+    "watch:scss": "onchange 'css/*.scss' -- npm run scss",
+    "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'",
+    "start": "npm run watch:all",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,6 +18,8 @@
   "license": "ISC",
   "devDependencies": {
     "lite-server": "^2.6.1",
+    "onchange": "^7.0.0",
+    "parallelshell": "3.0.1",
     "sass": "^1.58.3"
   },
   "dependencies": {
