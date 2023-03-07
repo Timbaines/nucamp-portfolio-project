@@ -7,6 +7,20 @@ $(document).ready(function () {
   });
 
   ///////////////////////////////////////////////////////////
+  // Smooth Scroll
+
+  $(document).ready(function () {
+    var target = $(location).attr("hash");
+    var offset = $(this).attr("data-offset") ? $(this).attr("data-offset") : 0;
+    $("body,html").animate(
+      {
+        scrollTop: $(target).offset().top - offset,
+      },
+      700
+    );
+  });
+
+  ///////////////////////////////////////////////////////////
   // Typewriter
 
   var TxtType = function (el, toRotate, period) {
