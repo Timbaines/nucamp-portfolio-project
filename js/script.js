@@ -1,27 +1,11 @@
-///////////////////////////////////////////////////////////
-// Animated Mobile Menu
+/////// Animated Mobile Menu Icon
 
 $(document).ready(function () {
   $(".first-button").on("click", function () {
     $(".nav-toggle-btn").toggleClass("open");
   });
 
-  ///////////////////////////////////////////////////////////
-  // Smooth Scroll
-
-  $(document).ready(function () {
-    var target = $(location).attr("hash");
-    var offset = $(this).attr("data-offset") ? $(this).attr("data-offset") : 0;
-    $("body,html").animate(
-      {
-        scrollTop: $(target).offset().top - offset,
-      },
-      700
-    );
-  });
-
-  ///////////////////////////////////////////////////////////
-  // Typewriter
+  /////// Typewriter
 
   var TxtType = function (el, toRotate, period) {
     this.toRotate = toRotate;

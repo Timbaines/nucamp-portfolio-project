@@ -1,52 +1,22 @@
-$header-font: "Poppins", sans-serif;
-$body-font: "Poppins", sans-serif;
-
-$color-primary: #0e5fa2;
-$color-secondary: #316ce8;
-$color-typewriter-blue: #3486c9;
-$color-pale: #faf8f5;
-$color-dark-gray: #232526;
-$color-pale-gray: #e3e3e3;
-$color-black: #000000;
-
-$color-subheading: #454545;
-$color-light: #ffffff;
-$shadow-primary: rgba(115, 128, 157, 0.3);
-$shadow-modal: rgba(0, 0, 0, 0.3);
-$shadow-avatar: rgba(115, 128, 157, 0.4);
-
-$pill-primary: #0e5fa2;
-$pill-secondary: #f9900e;
-$pill-testimonial: rgba(120, 130, 140, 0.13);
-
-$slider-green-start: #23bdb8;
-$slider-green-end: #43e794;
-
-$slider-orange-start: #f9900e;
-$slider-orange-end: #ffba56;
-
 body {
-  font-family: $body-font;
+  font-family: "Poppins", sans-serif;
 }
 
 /********************************************
 Media Queries - Start
 ********************************************/
-
 /****** Large Desktops ******/
 @media (max-width: 1366px) {
   .jumbotron-container {
     padding: 50px 30px 50px 30px;
   }
 }
-
 /****** Laptops ******/
 @media (max-width: 1200px) {
   .jumbotron-container {
     padding: 50px 15px 50px 15px;
   }
 }
-
 /****** Tablet ******/
 @media (max-width: 960px) {
   h2 {
@@ -57,85 +27,69 @@ Media Queries - Start
     min-height: 80px;
   }
 }
-
 /****** Mobile ******/
-
 @media (max-width: 767px) {
   .row-content {
     padding: 20px 0;
     min-height: 60px;
   }
-
   h2 {
     font-size: 1.5rem;
   }
-
   .hero h1 {
     font-size: 2.7rem;
     font-weight: 700;
   }
-
   .hero h1 span {
     font-size: 2.5rem;
     font-weight: 700;
   }
-
   .supporter-imgs img {
-    border: 2px solid $color-pale;
-    box-shadow: 0px 0px 30px $shadow-avatar;
+    border: 2px solid #faf8f5;
+    box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.4);
     width: 45px;
     height: 45px;
     margin-right: -1.2rem;
   }
-
   .jumbotron-container {
     padding: 60px 15px 60px 15px;
   }
-
   .our-mission .mission-wrapper .lower-box {
     margin-top: 8px;
   }
-
   .card-project {
     box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   }
-
   .card-project:hover {
     transform: translateY(0rem);
   }
-
   .testimonial .testimonial-pill {
     -webkit-box-orient: horizontal !important;
     -webkit-box-direction: normal !important;
     -webkit-flex-direction: row !important;
     -ms-flex-direction: row !important;
     flex-direction: row !important;
-    border-right: 0px solid $pill-testimonial;
-    border-bottom: 1px solid $pill-testimonial;
+    border-right: 0px solid rgba(120, 130, 140, 0.13);
+    border-bottom: 1px solid rgba(120, 130, 140, 0.13);
     margin-bottom: 40px;
   }
-
   .testimonial .testimonial-pill .nav-link img {
     width: 70px;
   }
-
   .testimonial .testimonial-pill .nav-link.active {
-    border-right: 0px solid $color-primary;
-    border-bottom: 3px solid $color-primary;
+    border-right: 0px solid #0e5fa2;
+    border-bottom: 3px solid #0e5fa2;
   }
-
   .text-slider .title {
     line-height: 30px;
     font-size: 24px;
   }
 }
-
 /********************************************
 Media Queries - End
 ********************************************/
-
 .sticky-top {
-  background-color: $color-pale;
+  background-color: #faf8f5;
 }
 
 .noise-overlay {
@@ -155,16 +109,14 @@ Media Queries - End
 /********************************************
 Typography System
 ********************************************/
-
 /* ----- Typography ----- */
-
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: $header-font;
+  font-family: "Poppins", sans-serif;
 }
 
 h2 {
@@ -172,7 +124,7 @@ h2 {
 }
 
 .text-subtitle {
-  color: $color-subheading;
+  color: #454545;
 }
 
 .font-weight-medium {
@@ -180,7 +132,7 @@ h2 {
 }
 
 .bg-beige {
-  background-color: $color-pale;
+  background-color: #faf8f5;
 }
 
 /********************************************
@@ -190,134 +142,77 @@ Modals
 #giveModal,
 .modal-content {
   border-radius: 12px;
-  box-shadow: 0 2.4rem 4.8rem $shadow-modal;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.3);
   overflow: hidden;
 }
 
 /********************************************
 Utility Classes
 ********************************************/
-
 /****** Backgrounds ******/
-
 .row-content {
   padding: 60px 0;
   min-height: 200px;
 }
 
 .box-shadow-primary {
-  box-shadow: 0px 0px 20px $shadow-primary;
+  box-shadow: 0px 0px 20px rgba(115, 128, 157, 0.3);
 }
 
 /********************************************
 Reusable Compontents
 ********************************************/
-
 /* ----- Buttons ----- */
-
 .btn-md {
   padding: 6px 15px;
   font-size: 20px;
 }
 
 .btn-info-gradient {
-  background: $color-primary;
-  color: $color-light;
-  background: -webkit-linear-gradient(
-    legacy-direction(to right),
-    $color-primary 0%,
-    $color-secondary 100%
-  );
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from($color-primary),
-    to($color-secondary)
-  );
-  background: -webkit-linear-gradient(
-    left,
-    $color-primary 0%,
-    $color-secondary 100%
-  );
-  background: -o-linear-gradient(
-    left,
-    $color-primary 0%,
-    $color-secondary 100%
-  );
-  background: linear-gradient(
-    to right,
-    $color-primary 0%,
-    $color-secondary 100%
-  );
+  background: #0e5fa2;
+  color: #ffffff;
+  background: -webkit-linear-gradient(legacy-direction(to right), #0e5fa2 0%, #316ce8 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#0e5fa2), to(#316ce8));
+  background: -webkit-linear-gradient(left, #0e5fa2 0%, #316ce8 100%);
+  background: -o-linear-gradient(left, #0e5fa2 0%, #316ce8 100%);
+  background: linear-gradient(to right, #0e5fa2 0%, #316ce8 100%);
 }
 
 .btn-info-gradient:hover {
-  background: $color-secondary;
-  color: $color-light;
-  background: -webkit-linear-gradient(
-    legacy-direction(to right),
-    $color-secondary 0%,
-    $color-primary 100%
-  );
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from($color-secondary),
-    to($color-primary)
-  );
-  background: -webkit-linear-gradient(
-    left,
-    $color-secondary 0%,
-    $color-primary 100%
-  );
-  background: -o-linear-gradient(
-    left,
-    $color-secondary 0%,
-    $color-primary 100%
-  );
-  background: linear-gradient(
-    to right,
-    $color-secondary 0%,
-    $color-primary 100%
-  );
+  background: #316ce8;
+  color: #ffffff;
+  background: -webkit-linear-gradient(legacy-direction(to right), #316ce8 0%, #0e5fa2 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#316ce8), to(#0e5fa2));
+  background: -webkit-linear-gradient(left, #316ce8 0%, #0e5fa2 100%);
+  background: -o-linear-gradient(left, #316ce8 0%, #0e5fa2 100%);
+  background: linear-gradient(to right, #316ce8 0%, #0e5fa2 100%);
 }
 
 .btn-outline-ghost {
-  border: 1px solid $color-primary;
-  color: $color-primary;
+  border: 1px solid #0e5fa2;
+  color: #0e5fa2;
 }
 
 .btn-outline-ghost:hover {
-  background: -webkit-linear-gradient(
-    left,
-    $color-secondary 0%,
-    $color-primary 100%
-  );
-  color: $color-light;
+  background: -webkit-linear-gradient(left, #316ce8 0%, #0e5fa2 100%);
+  color: #ffffff;
 }
 
 /* ----- Modals ----- */
-
 /* ----- Badges ----- */
-
 .badge {
   line-height: 16px;
 }
 
 .badge-span {
-  background: $color-primary;
+  background: #0e5fa2;
 }
 
 /********************************************
 Section | Header | Hero | Jumbotron
 ********************************************/
-
 /****** Navbar ******/
-
 /****** Mobile-Nav ******/
-
 .nav-toggle-btn {
   width: 30px;
   height: 20px;
@@ -353,8 +248,9 @@ Section | Header | Hero | Jumbotron
 }
 
 .nav-toggle-btn span {
-  background: $color-primary;
+  background: #0e5fa2;
 }
+
 .nav-toggle-btn span:nth-child(1) {
   top: 0px;
 }
@@ -389,7 +285,6 @@ Section | Header | Hero | Jumbotron
 }
 
 /****** Jumbotron ******/
-
 .jumbotron-container {
   padding: 50px 120px 50px 120px;
 }
@@ -397,12 +292,7 @@ Section | Header | Hero | Jumbotron
 .jumbotron-fluid {
   position: relative;
   border-radius: 20px;
-  background-image: linear-gradient(
-      45deg,
-      rgba(41, 46, 73, 0.2),
-      rgba(83, 105, 118, 0.2)
-    ),
-    url(../img/banners/compassion-in-action-about-us-banner.jpg);
+  background-image: linear-gradient(45deg, rgba(41, 46, 73, 0.2), rgba(83, 105, 118, 0.2)), url(../img/banners/compassion-in-action-about-us-banner.jpg);
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -414,11 +304,7 @@ Section | Header | Hero | Jumbotron
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: linear-gradient(
-    45deg,
-    rgba(0, 0, 0, 0.8),
-    rgba(46, 87, 111, 0)
-  );
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.8), rgba(46, 87, 111, 0));
 }
 
 .jumbotron-inner {
@@ -439,34 +325,12 @@ Section | Header | Hero | Jumbotron
 
 .hero h1 span {
   font-size: 3.5rem;
-  background: $color-primary;
-  background: -webkit-linear-gradient(
-    legacy-direction(to right),
-    $color-primary 0%,
-    $color-typewriter-blue 100%
-  );
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from($color-primary),
-    to($color-typewriter-blue)
-  );
-  background: -webkit-linear-gradient(
-    left,
-    $color-primary 0%,
-    $color-typewriter-blue 100%
-  );
-  background: -o-linear-gradient(
-    left,
-    $color-primary 0%,
-    $color-typewriter-blue 100%
-  );
-  background: linear-gradient(
-    to right,
-    $color-primary 0%,
-    $color-typewriter-blue 100%
-  );
+  background: #0e5fa2;
+  background: -webkit-linear-gradient(legacy-direction(to right), #0e5fa2 0%, #3486c9 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#0e5fa2), to(#3486c9));
+  background: -webkit-linear-gradient(left, #0e5fa2 0%, #3486c9 100%);
+  background: -o-linear-gradient(left, #0e5fa2 0%, #3486c9 100%);
+  background: linear-gradient(to right, #0e5fa2 0%, #3486c9 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -474,7 +338,7 @@ Section | Header | Hero | Jumbotron
 
 .hero-img {
   border-radius: 12px;
-  box-shadow: 0px 0px 30px $shadow-primary;
+  box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.3);
   overflow: hidden;
 }
 
@@ -488,8 +352,8 @@ Section | Header | Hero | Jumbotron
   height: 3.3rem;
   width: 3.3rem;
   border-radius: 50%;
-  border: 3px solid $color-pale;
-  box-shadow: 0px 0px 30px $shadow-primary;
+  border: 3px solid #faf8f5;
+  box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.3);
   margin-right: -1.5rem;
 }
 
@@ -500,7 +364,6 @@ Section | Header | Hero | Jumbotron
 /********************************************
 Section | Ways To Give
 ********************************************/
-
 .card-support {
   border-radius: 15px;
   border: none;
@@ -529,36 +392,20 @@ Section | Ways To Give
 }
 
 .support-overlay-bg1 {
-  background-image: linear-gradient(
-      45deg,
-      rgba(41, 46, 73, 0.9),
-      rgba(83, 105, 118, 0.5)
-    ),
-    url(../img/our-projects/our-projects-1.jpg);
+  background-image: linear-gradient(45deg, rgba(41, 46, 73, 0.9), rgba(83, 105, 118, 0.5)), url(../img/our-projects/our-projects-1.jpg);
 }
 
 .support-overlay-bg2 {
-  background-image: linear-gradient(
-      45deg,
-      rgba(41, 46, 73, 0.9),
-      rgba(83, 105, 118, 0.5)
-    ),
-    url(../img/our-projects/our-projects-2.jpg);
+  background-image: linear-gradient(45deg, rgba(41, 46, 73, 0.9), rgba(83, 105, 118, 0.5)), url(../img/our-projects/our-projects-2.jpg);
 }
 
 .support-overlay-bg3 {
-  background-image: linear-gradient(
-      45deg,
-      rgba(41, 46, 73, 0.9),
-      rgba(83, 105, 118, 0.5)
-    ),
-    url(../img/our-projects/our-projects-3.jpg);
+  background-image: linear-gradient(45deg, rgba(41, 46, 73, 0.9), rgba(83, 105, 118, 0.5)), url(../img/our-projects/our-projects-3.jpg);
 }
 
 /********************************************
 Section | Our Mission |
 ********************************************/
-
 .our-mission h6 {
   line-height: 22px;
   font-size: 18px;
@@ -585,18 +432,18 @@ Section | Our Mission |
 }
 
 .card-icon {
-  color: $color-primary;
+  color: #0e5fa2;
 }
 
 /********************************************
 Section | Our Projects
 ********************************************/
-
 .card-project {
   border-radius: 20px;
   overflow: hidden;
   transition: all 0.4s;
 }
+
 .card-project,
 .card-body,
 .card-title,
@@ -604,6 +451,7 @@ Section | Our Projects
   position: relative;
   z-index: 2;
 }
+
 /****** Hover Animation - Move Up ******/
 .card-project:hover {
   transform: translateY(-1.2rem);
@@ -635,40 +483,24 @@ Section | Our Projects
 
 .project-overlay-bg1 {
   position: absolute;
-  background-image: linear-gradient(
-      45deg,
-      rgba(41, 46, 73, 0.9),
-      rgba(83, 105, 118, 0.5)
-    ),
-    url(../img/our-projects/our-projects-1.jpg);
+  background-image: linear-gradient(45deg, rgba(41, 46, 73, 0.9), rgba(83, 105, 118, 0.5)), url(../img/our-projects/our-projects-1.jpg);
 }
 
 .project-overlay-bg2 {
   position: absolute;
-  background-image: linear-gradient(
-      45deg,
-      rgba(41, 46, 73, 0.9),
-      rgba(83, 105, 118, 0.5)
-    ),
-    url(../img/our-projects/our-projects-2.jpg);
+  background-image: linear-gradient(45deg, rgba(41, 46, 73, 0.9), rgba(83, 105, 118, 0.5)), url(../img/our-projects/our-projects-2.jpg);
 }
 
 .project-overlay-bg3 {
   position: absolute;
-  background-image: linear-gradient(
-      45deg,
-      rgba(41, 46, 73, 0.9),
-      rgba(83, 105, 118, 0.5)
-    ),
-    url(../img/our-projects/our-projects-3.jpg);
+  background-image: linear-gradient(45deg, rgba(41, 46, 73, 0.9), rgba(83, 105, 118, 0.5)), url(../img/our-projects/our-projects-3.jpg);
 }
 
 /********************************************
 Section | Testimonial
 ********************************************/
-
 .testimonial {
-  color: $color-subheading;
+  color: #454545;
   font-weight: 300;
 }
 
@@ -682,13 +514,13 @@ Section | Testimonial
 }
 
 .testimonial .subtitle .h6 {
-  color: $color-subheading;
+  color: #454545;
   line-height: 24px;
   font-size: 16px;
 }
 
 .testimonial .testimonial-pill {
-  border-right: 1px solid $pill-testimonial;
+  border-right: 1px solid rgba(120, 130, 140, 0.13);
 }
 
 .testimonial .testimonial-pill .nav-link {
@@ -703,7 +535,7 @@ Section | Testimonial
 
 .testimonial .testimonial-pill .nav-link.active {
   background: transparent;
-  border-right: 3px solid $color-primary;
+  border-right: 3px solid #0e5fa2;
 }
 
 .testimonial .testimonial-pill .nav-link.active img {
@@ -711,8 +543,8 @@ Section | Testimonial
 }
 
 .testimonial .btn-testimonial {
-  background: $color-primary !important;
-  border: 1px solid $color-primary !important;
+  background: #0e5fa2 !important;
+  border: 1px solid #0e5fa2 !important;
 }
 
 .testimonial .btn-md {
@@ -725,13 +557,12 @@ Section | Testimonial
 .testimonial i {
   margin-top: -11px;
   margin-left: 2px;
-  color: $color-light;
+  color: #ffffff;
 }
 
 /********************************************
 Section | Our Totals
 ********************************************/
-
 .card-totals {
   border-radius: 15px;
   border: none;
@@ -739,12 +570,8 @@ Section | Our Totals
 }
 
 .bg-grey-dark {
-  background: linear-gradient(
-    to right,
-    $color-dark-gray,
-    $color-primary
-  ) !important;
-  color: $color-light;
+  background: linear-gradient(to right, #232526, #0e5fa2) !important;
+  color: #ffffff;
 }
 
 .card-totals .card-statistic .card-icon-large .fa {
@@ -756,7 +583,7 @@ Section | Our Totals
   line-height: 50px;
   margin-left: 15px;
   margin-bottom: 30px;
-  color: $color-black;
+  color: #000000;
   position: absolute;
   right: -5px;
   top: 20px;
@@ -765,21 +592,13 @@ Section | Our Totals
 
 /* Linear Gradients for Disaster Relief and Donations YTS Progress Bars  */
 .bg-green {
-  background: linear-gradient(
-    135deg,
-    $slider-green-start 0%,
-    $slider-green-end 100%
-  ) !important;
-  color: $color-light;
+  background: linear-gradient(135deg, #23bdb8 0%, #43e794 100%) !important;
+  color: #ffffff;
 }
 
 .bg-orange {
-  background: linear-gradient(
-    to right,
-    $slider-orange-start 0%,
-    $slider-orange-end 100%
-  ) !important;
-  color: $color-light;
+  background: linear-gradient(to right, #f9900e 0%, #ffba56 100%) !important;
+  color: #ffffff;
 }
 
 .credibility img {
@@ -790,11 +609,9 @@ Section | Our Totals
 /********************************************
 Page | About Us
 ********************************************/
-
 /********************************************
 Section | About Our Mission
 ********************************************/
-
 .project img {
   border-radius: 20px;
 }
@@ -802,7 +619,6 @@ Section | About Our Mission
 /********************************************
 Section | Text Slider
 ********************************************/
-
 .text-slider .row {
   border-radius: 20px;
   margin: 20px 0;
@@ -815,43 +631,17 @@ Section | Text Slider
 }
 
 .text-slider .title span {
-  border-bottom: 3px solid $color-primary;
+  border-bottom: 3px solid #0e5fa2;
 }
 
 .text-slider .text-success-gradiant {
-  background: $color-primary;
-  background: -webkit-linear-gradient(
-    legacy-direction(to right),
-    $color-primary 0%,
-    $color-typewriter-blue 100%
-  );
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from($color-primary),
-    to($color-typewriter-blue)
-  );
-  background: -webkit-linear-gradient(
-    left,
-    $color-primary 0%,
-    $color-typewriter-blue 100%
-  );
-  background: -o-linear-gradient(
-    left,
-    $color-primary 0%,
-    $color-typewriter-blue 100%
-  );
-  background: linear-gradient(
-    to right,
-    $color-primary 0%,
-    $color-typewriter-blue 100%
-  );
-  background: -o-linear-gradient(
-    to right,
-    $color-primary 0%,
-    $color-typewriter-blue 100%
-  );
+  background: #0e5fa2;
+  background: -webkit-linear-gradient(legacy-direction(to right), #0e5fa2 0%, #3486c9 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#0e5fa2), to(#3486c9));
+  background: -webkit-linear-gradient(left, #0e5fa2 0%, #3486c9 100%);
+  background: -o-linear-gradient(left, #0e5fa2 0%, #3486c9 100%);
+  background: linear-gradient(to right, #0e5fa2 0%, #3486c9 100%);
+  background: -o-linear-gradient(to right, #0e5fa2 0%, #3486c9 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -865,7 +655,6 @@ Section | Text Slider
 /********************************************
 Page | Ways To Give
 ********************************************/
-
 /****** Project Giving ******/
 .giving-card {
   border-radius: 20px;
@@ -873,8 +662,8 @@ Page | Ways To Give
 }
 
 .input-group .input-container {
-  border: 1px solid $color-pale-gray;
-  background: $color-light !important;
+  border: 1px solid #e3e3e3;
+  background: #ffffff !important;
   border-radius: 30px !important;
 }
 
@@ -887,7 +676,7 @@ Page | Ways To Give
 }
 
 .giving-card .card-footer {
-  background-color: $color-light;
+  background-color: #ffffff;
 }
 
 /****** Staff Giving ******/
@@ -903,7 +692,6 @@ Page | Ways To Give
 /********************************************
 Page | Checkout Summary
 ********************************************/
-
 .checkout h5 {
   font-size: 16px;
 }
@@ -915,30 +703,28 @@ Page | Checkout Summary
 /********************************************
 Section | Footer
 ********************************************/
-
 .site-footer {
   margin: 0;
 }
 
 footer a {
-  color: $color-subheading;
+  color: #454545;
   font-size: 14px;
   transition-duration: 0.2s;
 }
 
 footer a:hover {
-  color: $color-primary;
+  color: #0e5fa2;
   text-decoration: none;
 }
 
 .copy {
   font-size: 12px;
   padding: 20px;
-  border-top: 1px solid $color-primary;
+  border-top: 1px solid #0e5fa2;
 }
 
 /****** Social Icons ******/
-
 ul.social-network {
   list-style: none;
   display: inline;
@@ -951,15 +737,15 @@ ul.social-network li {
 }
 
 .social-network a.social-icon:hover {
-  background-color: $color-primary;
+  background-color: #0e5fa2;
 }
 
 .social-network a.social-icon:hover i {
-  color: $color-light;
+  color: #ffffff;
 }
 
 .social-circle li a {
-  border: 1px solid $color-primary;
+  border: 1px solid #0e5fa2;
   display: inline-block;
   margin: 0 auto;
   -moz-border-radius: 50%;
@@ -992,10 +778,12 @@ ul.social-network li {
 }
 
 .social-circle i {
-  color: $color-primary;
+  color: #0e5fa2;
   -webkit-transition: all 0.8s;
   -moz-transition: all 0.8s;
   -o-transition: all 0.8s;
   -ms-transition: all 0.8s;
   transition: all 0.8s;
 }
+
+/*# sourceMappingURL=styles.css.map */
