@@ -2,92 +2,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-/********************************************
-Media Queries - Start
-********************************************/
-/****** Large Desktops ******/
-@media (max-width: 1366px) {
-  .jumbotron-container {
-    padding: 50px 30px 50px 30px;
-  }
-}
-/****** Laptops ******/
-@media (max-width: 1200px) {
-  .jumbotron-container {
-    padding: 50px 15px 50px 15px;
-  }
-}
-/****** Tablet ******/
-@media (max-width: 960px) {
-  h2 {
-    font-size: 1.7rem;
-  }
-  .row-content {
-    padding: 20px 0;
-    min-height: 80px;
-  }
-}
-/****** Mobile ******/
-@media (max-width: 767px) {
-  .row-content {
-    padding: 20px 0;
-    min-height: 60px;
-  }
-  h2 {
-    font-size: 1.5rem;
-  }
-  .hero h1 {
-    font-size: 2.7rem;
-    font-weight: 700;
-  }
-  .hero h1 span {
-    font-size: 2.5rem;
-    font-weight: 700;
-  }
-  .supporter-imgs img {
-    border: 2px solid #faf8f5;
-    box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.4);
-    width: 45px;
-    height: 45px;
-    margin-right: -1.2rem;
-  }
-  .jumbotron-container {
-    padding: 60px 15px 60px 15px;
-  }
-  .our-mission .mission-wrapper .lower-box {
-    margin-top: 8px;
-  }
-  .card-project {
-    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
-  }
-  .card-project:hover {
-    transform: translateY(0rem);
-  }
-  .testimonial .testimonial-pill {
-    -webkit-box-orient: horizontal !important;
-    -webkit-box-direction: normal !important;
-    -webkit-flex-direction: row !important;
-    -ms-flex-direction: row !important;
-    flex-direction: row !important;
-    border-right: 0px solid rgba(120, 130, 140, 0.13);
-    border-bottom: 1px solid rgba(120, 130, 140, 0.13);
-    margin-bottom: 40px;
-  }
-  .testimonial .testimonial-pill .nav-link img {
-    width: 70px;
-  }
-  .testimonial .testimonial-pill .nav-link.active {
-    border-right: 0px solid #0e5fa2;
-    border-bottom: 3px solid #0e5fa2;
-  }
-  .text-slider .title {
-    line-height: 30px;
-    font-size: 24px;
-  }
-}
-/********************************************
-Media Queries - End
-********************************************/
 .sticky-top {
   background-color: #faf8f5;
 }
@@ -292,7 +206,7 @@ Section | Header | Hero | Jumbotron
 .jumbotron-fluid {
   position: relative;
   border-radius: 20px;
-  background-image: linear-gradient(45deg, rgba(41, 46, 73, 0.2), rgba(83, 105, 118, 0.2)), url(../img/banners/compassion-in-action-about-us-banner.jpg);
+  background-image: linear-gradient(45deg, rgba(41, 46, 73, 0.2), rgba(83, 105, 118, 0.2)), url(../img/compassion-in-action-about-us-banner.jpg);
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -392,15 +306,15 @@ Section | Ways To Give
 }
 
 .support-overlay-bg1 {
-  background-image: linear-gradient(45deg, rgba(41, 46, 73, 0.9), rgba(83, 105, 118, 0.5)), url(../img/our-projects/our-projects-1.jpg);
+  background-image: linear-gradient(45deg, rgba(41, 46, 73, 0.9), rgba(83, 105, 118, 0.5)), url(../img/our-projects-1.jpg);
 }
 
 .support-overlay-bg2 {
-  background-image: linear-gradient(45deg, rgba(41, 46, 73, 0.9), rgba(83, 105, 118, 0.5)), url(../img/our-projects/our-projects-2.jpg);
+  background-image: linear-gradient(45deg, rgba(41, 46, 73, 0.9), rgba(83, 105, 118, 0.5)), url(../img/our-projects-2.jpg);
 }
 
 .support-overlay-bg3 {
-  background-image: linear-gradient(45deg, rgba(41, 46, 73, 0.9), rgba(83, 105, 118, 0.5)), url(../img/our-projects/our-projects-3.jpg);
+  background-image: linear-gradient(45deg, rgba(41, 46, 73, 0.9), rgba(83, 105, 118, 0.5)), url(../img/our-projects-3.jpg);
 }
 
 /********************************************
@@ -483,17 +397,17 @@ Section | Our Projects
 
 .project-overlay-bg1 {
   position: absolute;
-  background-image: linear-gradient(45deg, rgba(41, 46, 73, 0.9), rgba(83, 105, 118, 0.5)), url(../img/our-projects/our-projects-1.jpg);
+  background-image: linear-gradient(45deg, rgba(41, 46, 73, 0.9), rgba(83, 105, 118, 0.5)), url(../img/our-projects-1.jpg);
 }
 
 .project-overlay-bg2 {
   position: absolute;
-  background-image: linear-gradient(45deg, rgba(41, 46, 73, 0.9), rgba(83, 105, 118, 0.5)), url(../img/our-projects/our-projects-2.jpg);
+  background-image: linear-gradient(45deg, rgba(41, 46, 73, 0.9), rgba(83, 105, 118, 0.5)), url(../img/our-projects-2.jpg);
 }
 
 .project-overlay-bg3 {
   position: absolute;
-  background-image: linear-gradient(45deg, rgba(41, 46, 73, 0.9), rgba(83, 105, 118, 0.5)), url(../img/our-projects/our-projects-3.jpg);
+  background-image: linear-gradient(45deg, rgba(41, 46, 73, 0.9), rgba(83, 105, 118, 0.5)), url(../img/our-projects-3.jpg);
 }
 
 /********************************************
@@ -785,5 +699,92 @@ ul.social-network li {
   -ms-transition: all 0.8s;
   transition: all 0.8s;
 }
+
+/********************************************
+Media Queries - Start
+********************************************/
+/****** Large Desktops ******/
+@media (max-width: 1366px) {
+  .jumbotron-container {
+    padding: 50px 30px 50px 30px;
+  }
+}
+/****** Laptops ******/
+@media (max-width: 1200px) {
+  .jumbotron-container {
+    padding: 50px 15px 50px 15px;
+  }
+}
+/****** Tablet ******/
+@media (max-width: 960px) {
+  h2 {
+    font-size: 1.7rem;
+  }
+  .row-content {
+    padding: 20px 0;
+    min-height: 80px;
+  }
+}
+/****** Mobile ******/
+@media (max-width: 767px) {
+  .row-content {
+    padding: 20px 0;
+    min-height: 60px;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  .hero h1 {
+    font-size: 2.7rem;
+    font-weight: 700;
+  }
+  .hero h1 span {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  .supporter-imgs img {
+    border: 2px solid #faf8f5;
+    box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.4);
+    width: 45px;
+    height: 45px;
+    margin-right: -1.2rem;
+  }
+  .jumbotron-container {
+    padding: 60px 15px 60px 15px;
+  }
+  .our-mission .mission-wrapper .lower-box {
+    margin-top: 8px;
+  }
+  .card-project {
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  }
+  .card-project:hover {
+    transform: translateY(0rem);
+  }
+  .testimonial .testimonial-pill {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+    -webkit-flex-direction: row !important;
+    -ms-flex-direction: row !important;
+    flex-direction: row !important;
+    border-right: 0px solid rgba(120, 130, 140, 0.13);
+    border-bottom: 1px solid rgba(120, 130, 140, 0.13);
+    margin-bottom: 40px;
+  }
+  .testimonial .testimonial-pill .nav-link img {
+    width: 70px;
+  }
+  .testimonial .testimonial-pill .nav-link.active {
+    border-right: 0px solid #0e5fa2;
+    border-bottom: 3px solid #0e5fa2;
+  }
+  .text-slider .title {
+    line-height: 30px;
+    font-size: 24px;
+  }
+}
+/********************************************
+Media Queries - End
+********************************************/
 
 /*# sourceMappingURL=styles.css.map */
